@@ -1,0 +1,9 @@
+default:
+  debug: True
+  flask:
+    name: 'WCPR'
+    host: 'localhost'
+    port: '5000'
+    FREEZER_BASE_URL: 'http://www.wcpr.org/'
+    FREEZER_DESTINATION: 'build'
+    debug: True
