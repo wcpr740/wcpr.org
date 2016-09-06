@@ -1,9 +1,9 @@
 {
-  "name": "mimictrade",
+  "name": "wcpr",
   "version": "0.0.0",
   "dependencies": {
-    "font-awesome": "~4.3.0",
-    "jquery": "~1.9.1",
-    "bootstrap": "^3.3.6"
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
   }
 }
