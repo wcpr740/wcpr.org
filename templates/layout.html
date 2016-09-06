@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+
+    {% assets "styles_main" %}
+        <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+    {% endassets %}
+
 </head>
 <body>
 
 {% block body %}{% endblock %}
 
 </body>
+
+{% assets "js_main" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+
 </html>

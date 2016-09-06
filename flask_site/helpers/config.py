@@ -3,7 +3,7 @@ import os
 import yaml
 
 
-def read_config(filename='flask_site/config/config.yml', env='default'):
+def read_config(filename, env=None):
     """ Open the YAML config if it exists, and load an environment if specified.
 
     :param str filename: defaults to `config.yml`
@@ -23,3 +23,6 @@ def read_config(filename='flask_site/config/config.yml', env='default'):
     if env not in doc:
         raise ValueError("Specified environment doesn't exist in config file")
     return doc[env]
+
+
+__all__ = ['read_config']

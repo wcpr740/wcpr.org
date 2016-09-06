@@ -90,5 +90,6 @@ ENV/
 
 
 # Project-specific
-.idea/
-static/bower_components/
+.idea
+bower_components
+static/out
