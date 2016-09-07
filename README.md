@@ -16,7 +16,11 @@ Run `start.py dev` to run a local Flask test server
 Run `freeze.py freeze` to build a static site to `/build` and then 
 serve that static site. Contents of `/build` will be silently replaced with new site.
 
-When deploying, the only folders needed from `static` are the `out` and `images` folder.
+When deploying, the only folders needed from `static` are:
+  
+  - `out` 
+  - `images` 
+  - `fonts`
 
 ## Needs
 

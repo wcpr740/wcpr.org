@@ -1,0 +1,16 @@
+@import (once) "../bower_components/bootstrap/less/bootstrap.less";
+
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "variables.less";
+
+
+// Override Bootstrap make-row because wtf why does it do it how it does.
+.make-row(@gutter: @grid-gutter-width) {
+  margin-left: 0;
+  margin-right: 0;
+  .clearfix();
+}
+
+
+.table-row-variant(disabled, #ddd);
