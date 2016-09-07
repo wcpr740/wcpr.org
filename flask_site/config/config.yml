@@ -1,6 +1,5 @@
-default:
-  debug: True
-  flask:
+default: &defaultConfig
+  flask: &flaskConfig
     name: 'WCPR'
     host: 'localhost'
     port: '5000'
@@ -8,3 +7,16 @@ default:
     FREEZER_DESTINATION: 'build'
     DEBUG: True
     ASSETS_DEBUG: True
+
+dev:
+  <<: *defaultConfig
+
+prod: &prodConfig
+  <<: *defaultConfig
+  flask:
+    <<: *flaskConfig
+    DEBUG: False
+    ASSETS_DEBUG: False
+
+freeze:
+  <<: *prodConfig

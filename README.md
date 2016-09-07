@@ -2,18 +2,21 @@
 
 ## Setup
 
-  1. Install Python requirements: `pip install -r requirements.txt`
-  2. Install npm requirements: `npm install -g less -g bower`
-  3. Install bower requirements: `bower install`
+  1. Setup a virtualenv: `virtualenv env` (and activate: `env\Scripts\activate`)
+  2. Install Python requirements: `pip install -r requirements.txt`
+  3. Install npm requirements: `npm install -g less -g bower`
+  4. Install bower requirements: `bower install`
   
 ## Developing
 
-Run `start.py` to run a local Flask test server
+Run `start.py dev` to run a local Flask test server
 
 ## Build
 
-Run `freeze.py` to build a static site to `/build` and then serve that static site.
-Contents of `/build` will be silently replaced with new site.
+Run `freeze.py freeze` to build a static site to `/build` and then 
+serve that static site. Contents of `/build` will be silently replaced with new site.
+
+When deploying, the only folders needed from `static` are the `out` and `images` folder.
 
 ## Needs
 
