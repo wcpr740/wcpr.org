@@ -2,6 +2,8 @@ js_main:
     filters:
         - rjsmin
     type: js
+    depends:
+        - scripts/*.js
     files:
         - bower_components/jquery/dist/jquery.js
         - bower_components/bootstrap/js/affix.js
@@ -23,5 +25,7 @@ styles_main:
         - less
         - csscompressor
     type: css
+    depends:
+        - styles/*.less
     files:
         - styles/main.less
