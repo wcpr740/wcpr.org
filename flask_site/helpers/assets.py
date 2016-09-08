@@ -44,20 +44,20 @@ def check_and_compile_bundle(name, settings):
         if not os.path.isfile(os.path.join(static_abs_path, filename)):
             raise IOError('File "%s" in bundle "%s" does not exist.' % (filename, name))
 
-    if 'filters' in settings:
-        filters = ','.join(settings['filters'])
-    else:
+    if settings.get('filters', None) is None:
         filters = None
-
-    if 'output' in settings:
-        output = settings['output']
     else:
+        filters = ','.join(settings['filters'])
+
+    if settings.get('output', None) is None:
         output = 'out/' + name + '.%(version)s' + '.' + settings['type']
-
-    if 'depends' in settings:
-        depends = ','.join(settings['depends'])
     else:
+        output = settings['output']
+
+    if settings.get('depends', None) is None:
         depends = None
+    else:
+        depends = ','.join(settings['depends'])
 
     return Bundle(*settings['files'], filters=filters, output=output, depends=depends)
 
