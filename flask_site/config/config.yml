@@ -1,6 +1,7 @@
 default: &defaultConfig
   flask: &flaskConfig
     name: 'WCPR'
+    name_long: 'WCPR - Castle Point Radio'
     host: 'localhost'
     port: '5000'
     PREFERRED_URL_SCHEME: http  # http or https
