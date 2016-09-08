@@ -3,6 +3,7 @@ default: &defaultConfig
     name: 'WCPR'
     host: 'localhost'
     port: '5000'
+    PREFERRED_URL_SCHEME: http  # http or https
     FREEZER_BASE_URL: 'http://www.wcpr.org/'
     FREEZER_DESTINATION: 'build'
     DEBUG: True
