@@ -18,6 +18,7 @@ js_main:
         - bower_components/bootstrap/js/scrollspy.js
         - bower_components/bootstrap/js/collapse.js
         - bower_components/bootstrap/js/tab.js
+        - bower_components/jPlayer/dist/jplayer/jquery.jplayer.js
         - scripts/main.js
 
 styles_main:
