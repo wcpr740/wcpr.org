@@ -20,17 +20,29 @@
 </head>
 <body>
 
+<div id="streaming_player"></div>
+
 <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
     <div class="navbar-header pull-left">
         <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img class="img-responsive" src="/static/images/logos/seeperlogo_trans.gif"> <span class="brand-name">{{ config['name'] }}</span>
+            <img class="img-responsive" src="/static/images/logos/seeperlogo_trans.gif"> <span class="brand-name hidden">{{ config['name'] }}</span>
         </a>
     </div>
     <div class="navbar-header pull-right">
         <ul class="nav navbar-nav">
-            <li id="player_toggle">
-                <i class="fa fa-play-circle-o play"></i>
-                <i class="fa fa-pause-circle-o pause"></i>
+            <li id="play_disabled">
+                <i class="fa fa-play-circle-o"></i>
+            </li>
+            <li id="jp_container_1" class="hidden">
+                <i class="fa fa-play-circle-o jp-play"></i>
+                <i class="fa fa-pause-circle-o jp-pause"></i>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <ul id="quality_select_dropdown" class="dropdown-menu dropdown-menu-right">
+                </ul>
             </li>
         </ul>
 

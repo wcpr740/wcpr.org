@@ -1,17 +1,40 @@
-#player_toggle {
-  &.playing {
-    .play {
+#streaming_player {
+  display: none;
+}
+
+#play_disabled {
+  font-size: @navbar-height;
+  color: @gray;
+}
+
+#jp_container_1 {
+  font-size: @navbar-height;
+  color: white;
+
+  &.jp-state-playing {
+    .jp-play {
       display: none;
     }
-    .pause {
+    .jp-pause {
       display: block;
     }
   }
 
-  .play {
+  .jp-play {
     display: block;
   }
-  .pause {
+  .jp-pause {
     display: none;
+  }
+}
+
+#quality_select_dropdown {
+  li a {
+    &.selected .fa-check {
+      display: inline;
+    }
+    .fa-check {
+      display: none;
+    }
   }
 }
