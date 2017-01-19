@@ -2,16 +2,19 @@
   display: none;
 }
 
+@play-loader-padding: 8px;
 #play_disabled {
-  font-size: @navbar-height;
-  color: @gray;
+  font-size: @navbar-height - (@play-loader-padding * 2);
+  padding: @play-loader-padding 0;
+  color: white;
 }
 
 #jp_container_1 {
   font-size: @navbar-height;
   color: white;
+  cursor: pointer;
 
-  &.jp-state-playing {
+  &.jp-state-playing {  // when playing, hide play button
     .jp-play {
       display: none;
     }
@@ -20,6 +23,7 @@
     }
   }
 
+  // when paused, hide pause button
   .jp-play {
     display: block;
   }

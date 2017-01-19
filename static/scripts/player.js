@@ -10,7 +10,8 @@ var STREAM_URLS = [
         'url': 'http://740.wcpr.org:8080/stream320.mp3'
     }
 ];
-var player_obj = $("#streaming_player");
+var player_obj = $("#streaming_player"),
+    was_playing = false;
 
 player_obj.jPlayer({
     ready: function () {
@@ -18,8 +19,7 @@ player_obj.jPlayer({
     },
     swfPath: '/static/bower_components/jPlayer/dist/jquery.jplayer.swf',
     cssSelectorAncestor: "#jp_container_1",
-    supplied: "mp3",
-    solution: "html, flash",
+    solution: "html,flash",
     useStateClassSkin: true,
     autoBlur: false,
     smoothPlayBar: true,
@@ -29,6 +29,17 @@ player_obj.jPlayer({
 player_obj.bind($.jPlayer.event.canplay, function() {
     $('#play_disabled').addClass('hidden');
     $('#jp_container_1').removeClass('hidden');
+    if (was_playing) {  // occurs when a user changes quality while playing
+        $(player_obj).jPlayer('play');
+    }
+});
+
+player_obj.bind($.jPlayer.event.play, function() {
+    was_playing = true;
+});
+
+player_obj.bind($.jPlayer.event.pause, function() {
+    was_playing = false;
 });
 
 function setMediaURL(index) {
@@ -46,7 +57,13 @@ function onMediaSelectClick() {
     }
     var quality_buttons = document.getElementsByClassName('stream-quality-btn'),
         selected_index = this.getAttribute('data-index');
+    // change the media stream to the selected one
     setMediaURL(parseInt(selected_index));
+    // hide the play button until the media is loaded
+    $('#jp_container_1').addClass('hidden');
+    $('#play_disabled').removeClass('hidden');
+
+    // change the quality buttons so the correct one has a checkmark and no others do
     for (var i = 0; i < quality_buttons.length; i++) {
         if (quality_buttons[i].getAttribute('data-index') == selected_index) {
             quality_buttons[i].className = 'stream-quality-btn selected';
@@ -57,9 +74,21 @@ function onMediaSelectClick() {
     }
 }
 
-function generateQualityOptions() {
+function generateQualityButtons() {
+    /* Generate buttons to pick the quality from each option in STREAM_URLS.
+
+     The format of a button is:
+     <li>
+         <a href="javascript:void(0)" className="stream-quality-btn"
+            onclick="onMediaSelectClick()" data-index="{INDEX}">
+             {NAME} <i class="fa fa-fw fa-check"></i>
+         </a>
+     </li>
+
+     */
     var container = document.getElementById('quality_select_dropdown'),
         i, li_elem, a_elem;
+
     for (i = 0; i < STREAM_URLS.length; i++) {
         li_elem = document.createElement('li');
 
@@ -81,4 +110,5 @@ function generateQualityOptions() {
     }
 }
 
-generateQualityOptions();
+// When page is loaded, generate the quality buttons.
+generateQualityButtons();
