@@ -52,7 +52,7 @@ function nowPlayingCallback(data) {
     }, 10);  // wait so bar can load to initial point before starting to move
 
     // schedule next time to load what's playing
-    setTimeout(loadNowPlaying, (remaining_seconds + 2) * 1000);
+    setTimeout(loadNowPlaying, (remaining_seconds + 3) * 1000);
 }
 
 
