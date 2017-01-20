@@ -1,9 +1,9 @@
-{
+nowPlayingCallback({
   "now": {
     "artist": "%a",
     "title": "%t",
     "album": "%T",
-    "img": "%U1"
+    "img": "%U1",
     "start": "%h",
     "len": "%S"
   },
@@ -33,4 +33,4 @@
       "img": "%3U1"
     }
   ]
-}
+})
