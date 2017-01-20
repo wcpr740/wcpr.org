@@ -39,8 +39,9 @@ function nowPlayingCallback(data) {
         percent_finished = elapsed_seconds / len_seconds * 100,
         remaining_seconds = len_seconds - elapsed_seconds;  // get time in seconds
 
-    if (remaining_seconds < 0) {
-        remaining_seconds = 1;
+    if (remaining_seconds <= 0) {
+        // avoids if we grab now_playing.json while it's updating
+        remaining_seconds = 0;
     }
 
     progress_bar.style.width = percent_finished + '%';
@@ -51,7 +52,7 @@ function nowPlayingCallback(data) {
     }, 1000);
 
     // schedule next time to load what's playing
-    setTimeout(loadNowPlaying, (remaining_seconds + 3) * 1000);
+    setTimeout(loadNowPlaying, (remaining_seconds + 2) * 1000);
 }
 
 
