@@ -20,6 +20,7 @@ js_main:
         - bower_components/bootstrap/js/tab.js
         - bower_components/jPlayer/dist/jplayer/jquery.jplayer.js
         - scripts/player.js
+        - scripts/now_playing.js
         - scripts/main.js
 
 styles_main:
