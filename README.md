@@ -25,18 +25,9 @@ the WCPR site directory.
 
 This is current configured by saving the file to the server via Windows SMB file-sharing protocol.
 
-When deploying, the only folders needed from `static` are:
-  
-  - `out` 
-  - `images` 
-  - `fonts`
 
 ## Needs
 
- - stream 740.wcpr.org:8080
-    - 64kbps
-    - 128kbps
-    - 320kbps
  - now playing
  - radio schedule
  - staff (with contact info)

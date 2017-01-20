@@ -1,6 +1,11 @@
 var STREAM_URLS = [
     {
-        'name': 'Low - 128kbps',
+        'name': 'Low - 64kbps',
+        'type': 'mp3',
+        'url': 'http://740.wcpr.org:8080/stream64.mp3'
+    },
+    {
+        'name': 'Med - 128kbps',
         'type': 'mp3',
         'url': 'http://740.wcpr.org:8080/stream128.mp3'
     },
@@ -11,11 +16,12 @@ var STREAM_URLS = [
     }
 ];
 var player_obj = $("#streaming_player"),
-    was_playing = false;
+    was_playing = false,
+    default_stream = 1;
 
 player_obj.jPlayer({
     ready: function () {
-        setMediaURL(0);
+        setMediaURL(default_stream);
     },
     swfPath: '/static/bower_components/jPlayer/dist/jquery.jplayer.swf',
     cssSelectorAncestor: "#jp_container_1",
@@ -98,7 +104,7 @@ function generateQualityButtons() {
         a_elem.setAttribute('href', 'javascript:void(0);');
         a_elem.setAttribute('data-index', '' + i);
 
-        if (i == 0) {
+        if (i == default_stream) {
             a_elem.className = 'stream-quality-btn selected';
         }
         else {
