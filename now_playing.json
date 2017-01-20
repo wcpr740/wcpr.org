@@ -1,0 +1,36 @@
+{
+  "now": {
+    "artist": "%a",
+    "title": "%t",
+    "album": "%T",
+    "img": "%U1"
+    "start": "%h",
+    "len": "%S"
+  },
+  "next": {
+    "artist": "%xa",
+    "title": "%xt",
+    "album": "%xT",
+    "img": "%xU1"
+  },
+  "last": [
+    {
+      "artist": "%1a",
+      "title": "%1t",
+      "album": "%1T",
+      "img": "%1U1"
+    },
+    {
+      "artist": "%2a",
+      "title": "%2t",
+      "album": "%2T",
+      "img": "%2U1"
+    },
+    {
+      "artist": "%3a",
+      "title": "%3t",
+      "album": "%3T",
+      "img": "%3U1"
+    }
+  ]
+}

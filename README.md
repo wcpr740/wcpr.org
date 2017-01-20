@@ -16,6 +16,15 @@ Run `start.py dev` to run a local Flask test server
 Run `freeze.py freeze` to build a static site to `/build` and then 
 serve that static site. Contents of `/build` will be silently replaced with new site.
 
+## Deploy
+
+now_playing.json needs to be configured as the template for StationPlaylist output.
+In most cases, copy the file to "C:\Program Files (x86)\StationPlaylist\Studio\Templates".
+Thereafter, StationPlaylist can be configured to use that template and output it to the index of
+the WCPR site directory.
+
+This is current configured by saving the file to the server via Windows SMB file-sharing protocol.
+
 When deploying, the only folders needed from `static` are:
   
   - `out` 
