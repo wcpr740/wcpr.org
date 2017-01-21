@@ -4,7 +4,7 @@ nowPlayingCallback({
     "title": "%t",
     "album": "%T",
     "img": "%U1",
-    "start": "%h",
+    "start": "%dT%hZ",
     "len": "%S"
   },
   "next": {

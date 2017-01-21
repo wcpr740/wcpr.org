@@ -26,21 +26,13 @@ function nowPlayingCallback(data) {
     text_container.innerHTML = now['artist'] + ' - '  + now['title'];
 
     // get progress bar ready to move
-    var start_pieces = now['start'].split(':'),
-        start_time = new Date();
-    start_time = start_time.setHours(start_pieces[0], start_pieces[1], start_pieces[2]);
-    if (start_time > Date.now())  {
-        // account for when day rolls over.
-        start_time.setDate(start_time.getDate() - 1);
-    }
+    var start_time = new Date(now['start']),
+        elapsed_seconds = (Date.now() - start_time) / 1000,  // timestamps are in ms, so divide by 1000
+        len_seconds = parseInt(now['len']),
+        percent_finished = (elapsed_seconds / len_seconds * 100).toFixed(2),
+        remaining_seconds = (len_seconds - elapsed_seconds).toFixed(3);
 
-    var len_seconds = parseInt(now['len']),
-        elapsed_seconds = (Date.now() - start_time) / 1000,
-        percent_finished = elapsed_seconds / len_seconds * 100,
-        remaining_seconds = len_seconds - elapsed_seconds;  // get time in seconds
-
-    if (remaining_seconds <= 0) {
-        // avoids if we grab now_playing.json while it's updating
+    if (remaining_seconds < 0) {  // avoids if we grab now_playing.json while it's updating
         remaining_seconds = 0;
     }
 

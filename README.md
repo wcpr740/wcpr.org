@@ -21,7 +21,7 @@ serve that static site. Contents of `/build` will be silently replaced with new 
 now_playing.json needs to be configured as the template for StationPlaylist output.
 In most cases, copy the file to "C:\Program Files (x86)\StationPlaylist\Studio\Templates".
 Thereafter, StationPlaylist can be configured to use that template and output it to the index of
-the WCPR site directory.
+the WCPR site directory. The machine running StationPlaylist must also be set to use UTC time.
 
 This is current configured by saving the file to the server via Windows SMB file-sharing protocol.
 
