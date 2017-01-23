@@ -27,7 +27,8 @@ function nowPlayingCallback(data) {
     text_container.innerHTML = live['artist'] + ' - '  + live['title'];
 
     // get progress bar ready to move
-    var start_time = new Date(live['start']),
+    // TODO: Remove EST --> UTC workaround.
+    var start_time = new Date(new Date(live['start']).getTime() - 3600000 * -5),
         elapsed_seconds = (Date.now() - start_time) / 1000,  // timestamps are in ms, so divide by 1000
         len_seconds = parseInt(live['len']),
         percent_finished = (elapsed_seconds / len_seconds * 100).toFixed(2),
