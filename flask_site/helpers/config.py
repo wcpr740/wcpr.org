@@ -1,6 +1,6 @@
 import os
 
-import yaml
+from flask_site.libraries.yaml_ordered_loader import ordered_load
 
 
 def read_config(filename, env=None):
@@ -15,7 +15,7 @@ def read_config(filename, env=None):
         raise IOError('The file %s is not found' % filename)
 
     with open(filename, 'r') as f:
-        doc = yaml.load(f)
+        doc = ordered_load(f)
 
     if env is None:
         return doc
