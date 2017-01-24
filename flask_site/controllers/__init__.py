@@ -1,2 +1,2 @@
-from index import *
+from pages import *
 from legacy import *

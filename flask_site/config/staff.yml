@@ -1,0 +1,113 @@
+# image is sourced from /static/images/staff/
+# desc will be created as a regular text area
+# questions will be shown as <strong>question</strong><br>answer
+# HTML is preserved
+
+- position: General Manager
+  email: gm@wcpr.org
+  name: Andy Waldron
+  image: andy_waldron_2016.jpg
+  questions:
+    Major: Music & Technology, Visual Art & Technology Minor
+    Hometown: Fair Haven, NJ
+    Five Acts You Can't Go On Listening Without: David Bowie, Beck, J Dilla, Frank Ocean, Blur
+    Favorite Movie: I'm Here, Spike Jonze
+    Other Activities: Making playlists, puns, emails, talking about Kanye West, and long walks on the beach. In that order.
+
+
+- position: Programming Manager
+  email: programming@wcpr.org
+  name: David Stein
+  image: david_stein_2016.jpg
+  questions:
+    Major: Chemical Engineering
+    Hometown: Andover, MA
+    Five Acts You Can't Go On Listening Without: Led Zeppelin, Spoon, The Strokes, Franz Ferdinand, Arctic Monkeys
+    Other Activities: Being Dave
+
+
+- position: Business Manager
+  email: business@wcpr.org
+  name: Pratik Patel
+  image: pratik_patel_2016.jpg
+  questions:
+    Major: Business & Technology
+    Involvement: Student Worker at Stevens Audit and Advisory Services, Student Ambassador of Howe Business School, Dean's Activities List Member.
+    Hobbies: Hosting Deep Space on WCPR, Binge watching tv shows
+    Hometown: Salina, KS
+    Five Acts You Can't Go On Listening Without: Zhu, Disclosure, Daft Punk, Major Lazer, Madeon, Jamie XX
+    Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=2H5uWRjFsGc">Chumbawamba - Tubthumping</a>
+
+
+- position: Publicity Manager
+  email: publicity@wcpr.org
+  name: Emma Murphy
+  image: emma_murphy_2016.jpg
+  questions:
+    Major: Business & Technology
+    Hometown: Manasquan, NJ
+    Five Acts You Can't Go On Listening Without: Frankie Cosmos, Mitski, The Lawrence Arms, Screaming Females, The Cure
+    Favorite Movie: The Awakening
+    Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=OpNbTlehSHU">I Don't Want To Be In Love by Good Charlotte</a>
+    Other Activities: playing bass, listening to music, watching tv/movies
+
+
+- position: Station Engineer
+  email: engineer@wcpr.org
+  name: Chris Wacyra
+  image: chris_wacyra_2016.jpg
+  description: I'm Christopher Wacyra, also known as DJ Kris Kross by the staff of WCPR. I'm a visual arts major with an obsession with djing.......enough said..... ;3
+  questions:
+    Major: Visual Art & Technology
+
+
+- position: Office Manager
+  email: office@wcpr.org
+  name: Jackson Domenech
+  image: jackson_domenech_2016.jpg
+  questions:
+    Major: Chemical Engineering
+    Hometown: East Islip, NY
+    Five bands you can't go on listening without: Arctic Monkeys, Modern Baseball, Broken Bells, Death Cab for Cutie, Gorillaz
+    Other Activities: Video Games, Playing Guitar, Listening to Music
+
+#
+#- position: Record Librarian
+#  email: records@wcpr.org
+#  name: Tori Davis
+#  image:
+
+
+- position: Record Librarian
+  email: records@wcpr.org
+  name: Brian Madden
+  image: brian_madden_2016.jpg
+  questions:
+    Major: Electrical Engineering
+    Hometown: Jackson, NJ
+    Five Acts You Can't Go On Listening Without: St. Vincent, Mac DeMarco, Gorillaz, King Khan, Death Grips
+    Favorite Movie: Drive
+    Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=O-zpOMYRi0w">Fancy by Iggy Azalea</a>
+    Other Activities: Reading, Playing Music, Video Games
+
+
+- position: WAA Liaison
+  email: waa@wcpr.org
+  name: Gianluca Borrelli
+  image: gianluca_borrelli_2016.jpg
+  questions:
+    Major: Mechanical Engineering
+    Hometown: Rockway, NJ
+    Five acts You Can't Go On Listening Without: Snoop Dogg, Modern Baseball, Protest the Hero, Tessaract, Kendrick Lamar
+    Favorite Movie: The Notebook
+    Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=kT3OQwyvKmk">U Guessed It - OG Maco</a>
+    Other Activities: going to concerts, skiing, netflix n' chill, satanic rituals, paganism, bible study
+
+
+- position: System Administrator & Webmaster
+  email: sysadmin@wcpr.org
+  name: Dylan Praul
+  image: dylan_praul_2016.jpg
+  description: Eventually this website won't be <a href="https://www.youtube.com/watch?v=sIlNIVXpIns">bad</a>.
+  questions:
+    Major: Computer Engineering

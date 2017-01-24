@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}Contact Us | {% endblock %}
+
+{% block body %}
+    <section class="row">
+        <div class="col-sm-12">
+            <h1>Contact</h1>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title">Requests</h3></div>
+                <div class="panel-body">
+                    Call <a href="tel:201-216-3483">(201) 216-3483</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="row" id="staff">
+        <div class="col-sm-12">
+            <h1>Staff</h1>
+        </div>
+    </section>
+    {% for person in staff %}
+        <div class="row staff-row">
+            <div class="col-sm-3 col-xs-12 staff-img-cont">
+                <img src="{{ '/static/images/staff/%s' % person['image'] }}"
+                     class="img-responsive">
+            </div>
+            <div class="col-sm-9">
+                <h2>{{ person['name'] }} <small>{{ person['position'] }}</small></h2>
+                <p>{% if 'description' in person %}{{ person['description']|safe }}<br>{% endif %}
+                    Contact me at <a href="mailto:{{ person['email'] }}">{{ person['email'] }}</a>
+                </p>
+                {% if 'questions' in person %}
+                    <div class="row">
+                    {% for question, answer in person['questions'].iteritems() %}
+                        <div class="col-sm-6 col-md-4 q-and-a">
+                            <strong>{{ question|safe|title }}</strong><br>
+                            {{ answer|safe }}
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -58,14 +58,14 @@
         <ul class="nav navbar-nav pull-left">
             <li><a href="#">Events</a></li>
             <li><a href="#">Mobile Units</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
             <li><a href="https://www.wcpralumni.com/">Alumni</a></li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
                     More <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i> Mo</a></li>
+                    <li><a href="{{ url_for('contact', _anchor='staff') }}">Staff</a></li>
                     <li class="divider"></li>
                     <li><a href="#"> Re</a></li>
                 </ul>
@@ -74,13 +74,15 @@
     </div>
 </nav>
 <div id="now_playing_container">
-    Now Playing: <span id="now_playing"></span>
+    Now Playing:  <strong id="now_playing"></strong>
 </div>
 <div id="play_progress_container" class="progress">
     <div class="progress-bar progress-bar-accent" role="progressbar" id="play_progress"></div>
 </div>
 
-{% block body %}{% endblock %}
+<div class="container">
+    {% block body %}{% endblock %}
+</div>
 
 </body>
 
