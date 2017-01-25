@@ -19,9 +19,10 @@ js_main:
         - bower_components/bootstrap/js/collapse.js
         - bower_components/bootstrap/js/tab.js
         - bower_components/jPlayer/dist/jplayer/jquery.jplayer.js
+        - bower_components/socket.io-client/dist/socket.io.slim.js
         - scripts/player.js
         - scripts/now_playing.js
-        - scripts/main.js
+        - scripts/websocket_setup.js
 
 styles_main:
     filters:

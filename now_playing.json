@@ -1,4 +1,4 @@
-nowPlayingCallback({
+{
   "now": {
     "artist": "%a",
     "title": "%t",
@@ -33,4 +33,4 @@ nowPlayingCallback({
       "img": "%3U1"
     }
   ]
-})
+}
