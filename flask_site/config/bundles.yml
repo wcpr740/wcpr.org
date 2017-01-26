@@ -23,6 +23,7 @@ js_main:
         - scripts/player.js
         - scripts/now_playing.js
         - scripts/websocket_setup.js
+        - scripts/analytics.js
 
 styles_main:
     filters:
