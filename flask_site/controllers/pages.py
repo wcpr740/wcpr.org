@@ -16,3 +16,8 @@ def index():
 @app.route('/contact/')
 def contact():
     return render_template('contact.html', staff=staff)
+
+
+@app.route('/policies/')
+def policies():
+    return render_template('policies.html')
