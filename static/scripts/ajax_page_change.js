@@ -116,15 +116,13 @@ function onLinkClick(e) {
         } // otherwise, page change
     }
 
-    e.preventDefault();
-    if (this.getAttribute('data-x') != null) {
-        if (window.analytics !== undefined) {
+    if (this.getAttribute('data-x')) {  // is an outbound link
+        if (window.analytics) {
             trackOutboundLink(href);
-        } else {
-            document.location.href = href;
         }
     }
     else {
+        e.preventDefault();
         navigate(href);
     }
 }
