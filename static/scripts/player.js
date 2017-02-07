@@ -118,3 +118,20 @@ function generateQualityButtons() {
 
 // When page is loaded, generate the quality buttons.
 generateQualityButtons();
+
+var CONFIRMATION_MESSAGE = "Leaving the page now will stop your music.\nAre you sure you want leave?",
+    has_prompted_to_leave = 0;  // used to prevent multiple prompts
+
+
+// If music is playing when the user tries to leave, warn the user.
+window.onbeforeunload = function() {
+    if (was_playing && has_prompted_to_leave == 0) {
+        has_prompted_to_leave++;
+        // setTimeout used prevent double prompting on most browsers,
+        // while still resetting prompt each time it is called.
+        setTimeout(function() {has_prompted_to_leave = 0}, 20);
+
+        // custom message is not displayed on most browsers, but send it in case it is.
+        return CONFIRMATION_MESSAGE;
+    }
+};

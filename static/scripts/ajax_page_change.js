@@ -117,6 +117,14 @@ function onLinkClick(e) {
     }
 
     if (this.getAttribute('data-x')) {  // is an outbound link
+        // if the music is playing, warn the user that leaving will stop it.
+        if (was_playing && !window.confirm(CONFIRMATION_MESSAGE)) {
+            // was_playing essentially means "is playing currently"
+            e.preventDefault();
+            return false;
+        } else {
+            has_prompted_to_leave++;  // they do want to leave the page, so don't prompt them again
+        }
         if (window.analytics) {
             trackOutboundLink(href);
         }
@@ -124,6 +132,7 @@ function onLinkClick(e) {
     else {
         e.preventDefault();
         navigate(href);
+        return false;
     }
 }
 
