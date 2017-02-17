@@ -20,11 +20,16 @@ js_main:
         - bower_components/bootstrap/js/tab.js
         - bower_components/jPlayer/dist/jplayer/jquery.jplayer.js
         - bower_components/socket.io-client/dist/socket.io.slim.js
+        - bower_components/moment/moment.js
+        - bower_components/fullcalendar/dist/fullcalendar.js
+        - bower_components/fullcalendar/dist/gcal.js
+        - scripts/string_trim_polyfill.js
         - scripts/player.js
         - scripts/now_playing.js
         - scripts/websocket_setup.js
         - scripts/analytics.js
-        - scripts/ajax_page_change.js
+        - scripts/schedule.js
+        - scripts/ajax_page_change.js  # keep this at the end so it can access all events
 
 styles_main:
     filters:

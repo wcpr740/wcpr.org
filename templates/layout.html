@@ -13,6 +13,14 @@
         <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
     {% endassets %}
 
+    <script>
+        GOOGLE_CALENDAR_CONFIG = {
+            api_key: '{{ config['calendar']['api_key'] }}',
+            autodj_id: '{{ config['calendar']['autodj_id'] }}',
+            shows_id: '{{ config['calendar']['shows_id'] }}'
+        }
+    </script>
+
     <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -56,7 +64,7 @@
     </div>
     <div id="nav_collapse" class="navbar-collapse collapse navbar-left">
         <ul class="nav navbar-nav pull-left">
-            <li><a href="#">Events</a></li>
+            <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
             <li><a href="#">Mobile Units</a></li>
             <li><a href="{{ url_for('contact') }}">Contact</a></li>
             <li><a href="https://www.wcpralumni.com/" data-x="x">Alumni</a></li>

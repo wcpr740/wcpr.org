@@ -1,0 +1,61 @@
+.show-format-gen(@name, @background-color, @text-color: black,
+                 @border: darken(@background-color, 10%) 1px solid) {
+  .show-format-@{name} {
+    &.fc-event {
+      background-color: @background-color;
+      border: none;
+      border-bottom: @border;
+      color: @text-color !important;
+    }
+  }
+}
+
+// Generate colors for each variety of show.
+// HTML color codes will also work perfectly.
+//     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BORDER);
+.show-format-gen(easy,          yellow,       black);
+.show-format-gen(rock,          darkred,      white);
+.show-format-gen(classic-rock,  darkblue,     white);
+.show-format-gen(talk,          darkgreen,    white);
+.show-format-gen(metal,         orange,       black);
+.show-format-gen(electronic,    black,        white);
+.show-format-gen(variety,       pink,         black);
+.show-format-gen(hip-hop,       purple,       white);
+.show-format-gen(indie,         cyan,         black);
+.show-format-gen(pop,           lightgray,    black);
+
+
+.fc-autodj-toggle-button, .fc-shows-toggle-button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.fc-events-full-width() {
+  .fc-event {
+    left: 0 !important;
+    right: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.fc {
+  &.hide-autodj {
+    .fc-events-full-width();
+    .schedule-autodj {
+      display: none;
+    }
+    .fc-shows-toggle-button {
+      .fc-state-down;
+    }
+  }
+  &.hide-shows {
+    .fc-events-full-width();
+    .schedule-shows {
+      display: none;
+    }
+    .fc-autodj-toggle-button {
+      .fc-state-down;
+    }
+  }
+}

@@ -22,6 +22,7 @@ var PAGE_EVENT_MAP = {
         'class': {
         },
         'id': {
+            'schedule_calendar': createScheduleCalendar
         }
     }
 };

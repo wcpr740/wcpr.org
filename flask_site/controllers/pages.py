@@ -21,3 +21,8 @@ def contact():
 @app.route('/policies/')
 def policies():
     return render_template('policies.html')
+
+
+@app.route('/schedule/')
+def schedule():
+    return render_template('schedule.html')

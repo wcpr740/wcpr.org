@@ -9,6 +9,10 @@ default: &defaultConfig
     FREEZER_DESTINATION: 'build'
     DEBUG: True
     ASSETS_DEBUG: True
+    calendar:
+      api_key: 'AIzaSyB3uiiC1cR_5W1rF5paNQpR_quDIVnhuro'
+      autodj_id: 'wcpr.org_c2mvtft9shfdmenddasmqcdmg8@group.calendar.google.com'
+      shows_id: 'wcpr.org_1psqcd1ugmcg568arhf47c9lqo@group.calendar.google.com'
 
 dev:
   <<: *defaultConfig
