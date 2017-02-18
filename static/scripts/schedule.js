@@ -57,9 +57,35 @@ function defaultEventDataTransform(eventData) {
 
 function toggleShowsAndAutoDJ() {
     /**
-     * When pressing either button, toggles styles to show or hide
+     * When pressing either button, toggles styles to show or hide.
+     *
+     * Relies on one being hidden at start.
      */
     $('#schedule_calendar').toggleClass('hide-shows hide-autodj');
+}
+
+var num_toggled_formats = 0;
+function onShowFormatToggle() {
+    var elem = $(this),
+        format = this.getAttribute('data-format'),
+        container = $('#schedule_calendar');
+
+    if (num_toggled_formats == 0) {
+        container.addClass('hide-formats');
+    }
+    if (elem.hasClass('selected')) {
+        container.removeClass('except-' + format);
+        num_toggled_formats--;
+    }
+    else {
+        container.addClass('except-' + format);
+        num_toggled_formats++;
+    }
+    elem.toggleClass('selected');
+
+    if (num_toggled_formats == 0) {
+        container.removeClass('hide-formats');
+    }
 }
 
 

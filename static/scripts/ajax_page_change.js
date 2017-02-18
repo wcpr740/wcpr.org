@@ -1,6 +1,7 @@
 var PAGE_EVENT_MAP = {
     'click': {
         'class': {
+            'format-toggle': onShowFormatToggle
         },
         'id': {
         }

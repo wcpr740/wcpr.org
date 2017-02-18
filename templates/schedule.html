@@ -4,5 +4,18 @@
 
 {% block body %}
     <h1>Schedule</h1>
-    <div id="schedule_calendar" class="hide-autodj"></div>
+    <div class="row">
+        <div class="col-md-2 show-format-list">
+            <h3>Legend</h3>
+            {% for format in show_formats %}
+                <div data-format="{{ format['id'] }}"
+                     class="label format-toggle show-format-{{ format['id'] }}">
+                    {{ format['name'] }}
+                </div><br>
+            {% endfor %}
+        </div>
+        <div class="col-md-10">
+            <div id="schedule_calendar" class="hide-autodj"></div>
+        </div>
+    </div>
 {% endblock %}

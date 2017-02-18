@@ -1,0 +1,32 @@
+# Keep this in sync with static/styles/schedule.less
+# and https://docs.google.com/document/d/1hHKkqUztOBTtLZxcA9rv6rtGZsqsbTLDWI8GEFB6Sy4/
+
+- id: easy
+  name: Easy Listening
+
+- id: rock
+  name: Rock
+
+- id: classic-rock
+  name: Classic Rock
+
+- id: talk
+  name: Talk Show
+
+- id: metal
+  name: Metal
+
+- id: electronic
+  name: Electronic
+
+- id: variety
+  name: Variety
+
+- id: hip-hop
+  name: Hip-Hop/R&B
+
+- id: indie
+  name: Indie/Alt/DIY
+
+- id: pop
+  name: Pop

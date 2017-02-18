@@ -1,18 +1,37 @@
 .show-format-gen(@name, @background-color, @text-color: black,
-                 @border: darken(@background-color, 10%) 1px solid) {
+                 @border-bottom: darken(@background-color, 10%) 1px solid) {
   .show-format-@{name} {
     &.fc-event {
       background-color: @background-color;
       border: none;
-      border-bottom: @border;
+      border-bottom: @border-bottom;
       color: @text-color !important;
+    }
+
+    &.label {
+      background-color: @background-color;
+      color: @text-color;
+      &:hover {
+        background-color: lighten(@background-color, 25%);
+        cursor: pointer;
+      }
+      &.selected {
+        background-color: lighten(@background-color, 30%);
+      }
+    }
+
+    .hide-formats & {
+      display: none;
+    }
+    .hide-formats.except-@{name} & {
+      display: block;
     }
   }
 }
 
-// Generate colors for each variety of show.
+// Generate colors for each variety of show. Keep this in sync with show_formats.yml
 // HTML color codes will also work perfectly.
-//     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BORDER);
+//     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BOTTOM BORDER);
 .show-format-gen(easy,          yellow,       black);
 .show-format-gen(rock,          darkred,      white);
 .show-format-gen(classic-rock,  darkblue,     white);
@@ -56,6 +75,15 @@
     }
     .fc-autodj-toggle-button {
       .fc-state-down;
+    }
+  }
+}
+
+@media (max-width: @screen-md-min) {
+  .show-format-list {
+    margin-bottom: 10px;
+    br {
+      display: none;
     }
   }
 }
