@@ -88,6 +88,10 @@ function onShowFormatToggle() {
     }
 }
 
+function defaultEventClick(event, jsEvent, view) {
+    return false;  // disable visiting the Google Calendar URL
+}
+
 
 function createScheduleCalendar() {
     $('#schedule_calendar').fullCalendar({
@@ -106,6 +110,7 @@ function createScheduleCalendar() {
                 eventDataTransform: defaultEventDataTransform
             }
         ],
+        eventClick: defaultEventClick,
         defaultView: 'agendaWeek',
         allDaySlot: false,
         slotEventOverlap: true,
