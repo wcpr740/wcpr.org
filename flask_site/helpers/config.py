@@ -2,8 +2,10 @@ import os
 
 from flask_site.libraries.yaml_ordered_loader import ordered_load
 
+CONFIG_FOLDER = os.path.abspath('flask_site/config')
 
-def read_config(filename, env=None):
+
+def read_config(filename='config.yml', env=None):
     """ Open the YAML config if it exists, and load an environment if specified.
 
     :param str filename: defaults to `config.yml`
@@ -11,10 +13,11 @@ def read_config(filename, env=None):
     :return: the loaded config `dict`
     :rtype: dict
     """
-    if not os.path.isfile(filename):
-        raise IOError('The file %s is not found' % filename)
+    full_path = os.path.join(CONFIG_FOLDER, filename)
+    if not os.path.isfile(full_path):
+        raise IOError('The file %s is not found' % full_path)
 
-    with open(filename, 'r') as f:
+    with open(full_path, 'r') as f:
         doc = ordered_load(f)
 
     if env is None:

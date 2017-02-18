@@ -1,11 +1,9 @@
-import os
-
 from flask import render_template
 
 from flask_site.helpers.config import read_config
-from flask_site import app, CONFIG_FOLDER
+from flask_site import app
 
-staff = read_config(os.path.join(CONFIG_FOLDER, 'staff.yml'))
+staff = read_config('staff.yml')
 
 
 @app.route('/')
