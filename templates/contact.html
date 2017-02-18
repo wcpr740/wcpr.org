@@ -3,11 +3,13 @@
 {% block title %}Contact Us | {% endblock %}
 
 {% block body %}
-    <section class="row">
+<section class="container">
+
+    <div class="row">
         <div class="col-sm-12">
             <h1>Contact</h1>
         </div>
-    </section>
+    </div>
     <div class="row">
         <div class="col-sm-3">
             <div class="panel panel-default">
@@ -18,13 +20,13 @@
             </div>
         </div>
     </div>
-
-
-    <section class="row" id="staff">
+</section>
+<section class="container" id="staff">
+    <div class="row">
         <div class="col-sm-12">
             <h1>Staff</h1>
         </div>
-    </section>
+    </div>
     {% for person in staff %}
         <div class="row staff-row">
             <div class="col-sm-3 col-xs-12 staff-img-cont">
@@ -49,4 +51,5 @@
             </div>
         </div>
     {% endfor %}
+</section>
 {% endblock %}
