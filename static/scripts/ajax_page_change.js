@@ -134,6 +134,7 @@ function onLinkClick(e) {
     else {
         e.preventDefault();
         navigate(href);
+        this.blur();
         return false;
     }
 }
