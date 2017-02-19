@@ -54,15 +54,6 @@
 
 - position: Station Engineer
   email: engineer@wcpr.org
-  name: Chris Wacyra
-  image: chris_wacyra_2016.jpg
-  description: I'm Christopher Wacyra, also known as DJ Kris Kross by the staff of WCPR. I'm a visual arts major with an obsession with djing.......enough said..... ;3
-  questions:
-    Major: Visual Art & Technology
-
-
-- position: Office Manager
-  email: office@wcpr.org
   name: Jackson Domenech
   image: jackson_domenech_2016.jpg
   questions:
@@ -71,11 +62,23 @@
     Five bands you can't go on listening without: Arctic Monkeys, Modern Baseball, Broken Bells, Death Cab for Cutie, Gorillaz
     Other Activities: Video Games, Playing Guitar, Listening to Music
 
-#
-#- position: Record Librarian
-#  email: records@wcpr.org
-#  name: Tori Davis
+
+#- position: Office Manager
+#  email: office@wcpr.org
+#  name:
 #  image:
+
+
+- position: Record Librarian
+  email: records@wcpr.org
+  name: Tori Davis
+  image: tori_davis_2016.jpg
+  questions:
+    Major: Mechanical Engineering
+    Hometown: Audubon, NJ
+    Five bands you can't go on listening without: Joyce Manor, Wavves, glocca morra, The Promise Ring, Dogs on Acid
+    Favorite TV Show to Binge Watch: Portlandia
+    Other Activities: Ditching Stevens for a semester to travel around Europe.
 
 
 - position: Record Librarian
