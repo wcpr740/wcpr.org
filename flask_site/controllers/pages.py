@@ -5,6 +5,7 @@ from flask_site import app
 
 staff = read_config('staff.yml')
 show_formats = read_config('show_formats.yml')
+mobile_unit_faq = read_config('mobile_unit_faq.yml')
 
 
 @app.route('/')
@@ -20,6 +21,11 @@ def contact():
 @app.route('/policies/')
 def policies():
     return render_template('policies.html')
+
+
+@app.route('/mobileunit/')
+def mobile_unit():
+    return render_template('mobile_unit.html', faq=mobile_unit_faq)
 
 
 @app.route('/schedule/')
