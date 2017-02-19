@@ -112,7 +112,7 @@ function onLinkClick(e) {
         return;
     }
     if (href.indexOf('#') >= 0) {
-        if (href.split('#')[0] == document.location.pathname) {
+        if (href.indexOf('#') == 0 || href.split('#')[0] == document.location.pathname) {
             // anchor on the same page, no page change
             return;
         } // otherwise, page change
