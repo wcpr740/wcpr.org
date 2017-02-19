@@ -28,7 +28,7 @@
         </div>
     </div>
     {% for person in staff %}
-        <div class="row staff-row">
+        <div class="row staff-row" id="staff_{{ person['email'].split('@')[0] }}">
             <div class="col-sm-3 col-xs-12 staff-img-cont">
                 <img src="{{ '/static/images/staff/%s' % person['image'] }}"
                      class="img-responsive">
