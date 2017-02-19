@@ -6,19 +6,21 @@
 <section class="container">
 
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
             <h1>Contact</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h3 class="panel-title">Requests</h3></div>
-                <div class="panel-body">
-                    Call <a href="tel:201-216-3483">(201) 216-3483</a>
-                </div>
-            </div>
+    <div class="row text-center">
+        {% for site in contact_list %}
+        <div class="col-sm-2 col-xs-4">
+            <h4>{{ site.name }}</h4>
+            <a class="btn btn-circle btn-lg brand-{{ site.id }}"
+               href="{{ site.url }}">
+                <i class="fa {{ site.icon }} fa-fw"></i>
+            </a>
+            <p class="text-center"><a href="{{ site.url }}">{{ site.username }}</a></p>
         </div>
+        {% endfor %}
     </div>
 </section>
 <section class="container" id="staff">

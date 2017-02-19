@@ -28,15 +28,8 @@ This is current configured by saving the file to the server via Windows SMB file
 
 ## Needs
 
- - mobile unit info
  - record library link
- - contact
  - calendar for mobile units and events
- - social media:
-    - Facebook
-    - Twitter
-    - Instagram
-    - Spotify
 
 
 ## Wants

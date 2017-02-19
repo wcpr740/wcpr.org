@@ -6,6 +6,7 @@ from flask_site import app
 staff = read_config('staff.yml')
 show_formats = read_config('show_formats.yml')
 mobile_unit_faq = read_config('mobile_unit_faq.yml')
+contact_list = read_config('contact.yml')
 
 
 @app.route('/')
@@ -15,7 +16,7 @@ def index():
 
 @app.route('/contact/')
 def contact():
-    return render_template('contact.html', staff=staff)
+    return render_template('contact.html', staff=staff, contact_list=contact_list)
 
 
 @app.route('/policies/')

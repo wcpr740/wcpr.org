@@ -1,0 +1,35 @@
+- id: facebook
+  name: Facebook
+  icon: fa fa-facebook
+  url: https://www.facebook.com/WCPR740/
+  username: WCPR740
+
+- id: instagram
+  name: Instagram
+  icon: fa fa-instagram
+  url: https://www.instagram.com/wcpr740/
+  username: wcpr740
+
+- id: twitter
+  name: Twitter
+  icon: fa fa-twitter
+  url: https://twitter.com/wcpr
+  username: wcpr
+
+- id: spotify
+  name: Spotify
+  icon: fa fa-spotify
+  url: https://open.spotify.com/user/wcpr
+  username: wcpr
+
+- id: requests
+  name: Requests
+  icon: fa fa-phone
+  url: tel:201-216-3483
+  username: (201) 216-3483
+
+- id: email
+  name: Email
+  icon: fa fa-at
+  url: mailto:info@wcpr.org
+  username: info@wcpr.org
