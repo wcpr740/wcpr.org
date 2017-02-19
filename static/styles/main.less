@@ -12,12 +12,19 @@
 @import "staff.less";
 @import "policies.less";
 @import "schedule.less";
+@import "mobile_unit.less";
 
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+section {
+  &.inverse {
+    background-color: @gray-light;
+  }
 }
 
 // Nifty scrollbar
