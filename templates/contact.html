@@ -3,24 +3,63 @@
 {% block title %}Contact Us | {% endblock %}
 
 {% block body %}
-<section class="container">
-
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Contact</h1>
+<section class="inverse">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact</h1>
+            </div>
         </div>
-    </div>
-    <div class="row text-center">
-        {% for site in contact_list %}
-        <div class="col-sm-2 col-xs-4">
-            <h4>{{ site.name }}</h4>
-            <a class="btn btn-circle btn-lg brand-{{ site.id }}"
-               href="{{ site.url }}">
-                <i class="fa {{ site.icon }} fa-fw"></i>
-            </a>
-            <p class="text-center"><a href="{{ site.url }}">{{ site.username }}</a></p>
+        <div class="row text-center">
+            {% for site in contact_list %}
+            <div class="col-sm-2 col-xs-4">
+                <h4>{{ site.name }}</h4>
+                <a class="btn btn-circle btn-lg social-{{ site.id }}"
+                   href="{{ site.url }}">
+                    <i class="fa {{ site.icon }} fa-fw"></i>
+                </a>
+                <p class="text-center"><a href="{{ site.url }}">{{ site.username }}</a></p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>General Correspondence</h3>
+                <div class="col-md-6">
+                    <p>
+                        Can't decide who to contact? Email
+                        <a href="mailto:info@wcpr.org">info@wcpr.org</a> and we'll help you find the
+                        right place.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-circle btn-lg social-email" href="mailto:info@wcpr.org">
+                        <i class="fa fa-at fa-fw"></i>
+                    </a>
+                    <p><a href="mailto:info@wcpr.org">info@wcpr.org</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Requests</h3>
+                <div class="col-md-10 col-md-offset-1">
+                    The request line is in-studio, and is only monitored while a DJ is on-air.
+                    Calls during scheduled AutoDJ blocks are not monitored.</div>
+            </div>
+            <div class="col-md-4">
+                <h3>Music Submissions & Packages</h3>
+                <div class="col-md-6">
+                    Music submissions, packages, and any physical mail should go to our mailbox.
+                </div>
+                <div class="col-md-6">
+                    <b>
+                        WCPR<br>
+                        Box S-1840<br>
+                        1 Castle Point Ter<br>
+                        Hoboken, NJ 07030
+                    </b>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section class="container" id="staff">

@@ -16,20 +16,3 @@
     line-height: 1.33;
   }
 }
-
-.brand-gen(@name, @background-color, @text-color: white) {
-  .brand-@{name} {
-    background-color: @background-color;
-    color: @text-color;
-    a&:hover {
-      background-color: darken(@background-color, 15%);
-    }
-  }
-}
-
-.brand-gen(facebook, #3b5998);
-.brand-gen(instagram, #e1306c);
-.brand-gen(twitter, #1da1f2);
-.brand-gen(spotify, #2ebd59);
-.brand-gen(requests, @brand-info);
-.brand-gen(email, @brand-primary);
