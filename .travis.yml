@@ -1,0 +1,14 @@
+language: python
+cache: pip
+python:
+- '2.7'
+install:
+- npm install -g bower -g less
+- bower install
+- pip install -r requirements.txt
+
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "8a5d0dfc5b11"  # used to decrypt deploy_key.enc
+  - COMMIT_AUTHOR_EMAIL: "sysadmin@wcpr.org"

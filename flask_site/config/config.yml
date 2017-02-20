@@ -6,7 +6,8 @@ default: &defaultConfig
     port: '5000'
     PREFERRED_URL_SCHEME: http  # http or https
     FREEZER_BASE_URL: 'http://www.wcpr.org/'
-    FREEZER_DESTINATION: 'build'
+    FREEZER_DESTINATION: 'build'  # must match $BUILD_FOLDER in deploy.sh
+    NOW_PLAYING_URL: 'http://127.0.0.1:5001/now_playing'  # see 740.wcpr.org repo
     DEBUG: True
     ASSETS_DEBUG: True
     calendar:
@@ -26,3 +27,12 @@ prod: &prodConfig
 
 freeze:
   <<: *prodConfig
+
+freeze_dev:
+  <<: *defaultConfig
+  flask:
+    <<: *flaskConfig
+    DEBUG: False
+    ASSETS_DEBUG: False
+    PREFERRED_URL_SCHEME: https
+    FREEZER_BASE_URL: 'https://wcpr740.github.io/'
