@@ -1,4 +1,4 @@
-from flask_site import freezer, config
+from flask_site import freezer, flask_config
 
 if __name__ == '__main__':
-    freezer.run(debug=config.get('debug'))  # build and serve from build directory
+    freezer.run(debug=flask_config.get('DEBUG'))  # build and serve from build directory
