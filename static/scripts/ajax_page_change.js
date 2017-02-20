@@ -101,37 +101,31 @@ function loadPageEvents() {
 function onLinkClick(e) {
     /**
      * Bound to all link elements on the page to override default behaviour.
-     *
-     * Outbound links - anything with a "data-x" tag - get default behaviour, otherwise
-     * navigation is through AJAX loading.
      */
     var href = this.getAttribute('href');
-    if (href.indexOf('javascript:') >= 0 || href.indexOf('mailto:') >= 0 ||
-        href.indexOf('tel:') >= 0 ||
-        e.which != 1 || this.getAttribute('target') != undefined) {
+    if (e.which != 1 || this.getAttribute('target') != undefined || this.hostname == "") {
+        // handle middle clicks, targeted links, and other protocols normally
         return;
     }
-    if (href.indexOf('#') >= 0) {
-        if (href.indexOf('#') == 0 || href.split('#')[0] == document.location.pathname) {
-            // anchor on the same page, no page change
-            return;
-        } // otherwise, page change
-    }
-
-    if (this.getAttribute('data-x')) {  // is an outbound link
-        // if the music is playing, warn the user that leaving will stop it.
-        if (was_playing && !window.confirm(CONFIRMATION_MESSAGE)) {
+    if (this.hostname != document.location.hostname) {  // external link
+        if (was_playing && !window.confirm(CONFIRMATION_MESSAGE)) {  // if music is playing, warn
             // was_playing essentially means "is playing currently"
             e.preventDefault();
-            return false;
+            return false;  // user chose not to leave, cancel navigation
         } else {
             has_prompted_to_leave++;  // they do want to leave the page, so don't prompt them again
         }
         if (window.analytics) {
             trackOutboundLink(href);
+            return false;  // navigation is handled by trackOutboundLink
         }
     }
-    else {
+    else {  // internal link
+        if (this.hash.length > 0 && this.pathname == document.location.pathname) {
+            // anchor links on the current page are handled normally
+            return;
+        }
+        // internal links otherwise are handled with ajax
         e.preventDefault();
         navigate(href);
         this.blur();
@@ -163,20 +157,34 @@ function linkCallback(data) {
     /**
      * After the page is grabbed via AJAX, put the proper elements in the page.
      */
-    if (data['url'] != undefined) {
-        navigate(data['url']);  // received a redirect
-        return;
-    }
     var title = data.split('<title>', 2)[1].split('</title>', 2)[0],
         body = data.split('<!--START_ANCHOR-->', 2)[1].split('<!--END_ANCHOR-->', 2)[0];
 
     document.title = title;
     document.getElementById('page_container').innerHTML = body;
-    loadPageEvents();
     if (window.analytics) {
         sendAnalyticsPageChange();
     }
+
+    loadPageEvents();
 }
+
+window.addEventListener('popstate', function(e) {
+    /**
+     * Use AJAX when the user presses the back button on their browser.
+     */
+    $.ajax({
+        dataType: "text",
+        cache: false,
+        data: {'json': ''},
+        url: document.location.href,
+        success: linkCallback,
+        error: function() {
+            // use regular page change if there's an error
+            document.location.href = document.location.href;
+        }
+    });
+});
 
 
 // load the page events once in the beginning
