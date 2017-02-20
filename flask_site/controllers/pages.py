@@ -9,6 +9,14 @@ mobile_unit_faq = read_config('mobile_unit_faq.yml')
 contact_list = read_config('contact.yml')
 
 
+@app.context_processor
+def jinja2_globals():
+    #  variables needed on every page.
+    return {
+        'contact_list': contact_list
+    }
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -16,7 +24,7 @@ def index():
 
 @app.route('/contact/')
 def contact():
-    return render_template('contact.html', staff=staff, contact_list=contact_list)
+    return render_template('contact.html', staff=staff)
 
 
 @app.route('/policies/')

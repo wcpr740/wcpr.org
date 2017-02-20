@@ -92,6 +92,27 @@
     <!--START_ANCHOR-->{% block body %}{% endblock %}<!--END_ANCHOR-->
 </div>
 
+<footer>
+    <div class="container">
+        <div class="pull-left">
+            &copy; WCPR - Castle Point Radio<br>
+            Stevens Institute of Technology, Hoboken, NJ
+        </div>
+        <div class="pull-right">
+            {% for site in contact_list %}
+                <a class="btn btn-circle social-gray"
+                   href="{{ site.url }}">
+                    <i class="{{ site.icon }} fa-fw"></i>
+                </a>
+            {% endfor %}
+            <a class="btn btn-circle social-gray"
+               href="mailto:info@wcpr.org">
+                <i class="fa fa-at fa-fw"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
 </body>
 
 {% assets "js_main" %}
