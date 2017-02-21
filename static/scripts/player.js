@@ -57,12 +57,12 @@ function setMediaURL(index) {
     $(player_obj).jPlayer("setMedia", params);
 }
 
-function onMediaSelectClick() {
-    if ($(this).hasClass('selected')) {
+function onMediaSelectClick(selected_index) {
+    var el = document.getElementById('quality_option_' + selected_index);
+    if ($(el).hasClass('selected')) {
         return;
     }
-    var quality_buttons = document.getElementsByClassName('stream-quality-btn'),
-        selected_index = this.getAttribute('data-index');
+    var quality_buttons = document.getElementsByClassName('stream-quality-btn');
     // change the media stream to the selected one
     setMediaURL(parseInt(selected_index));
     // hide the play button until the media is loaded
@@ -71,7 +71,7 @@ function onMediaSelectClick() {
 
     // change the quality buttons so the correct one has a checkmark and no others do
     for (var i = 0; i < quality_buttons.length; i++) {
-        if (quality_buttons[i].getAttribute('data-index') == selected_index) {
+        if (quality_buttons[i] == el) {
             quality_buttons[i].className = 'stream-quality-btn selected';
         }
         else {
@@ -86,7 +86,7 @@ function generateQualityButtons() {
      The format of a button is:
      <li>
          <a href="javascript:void(0)" className="stream-quality-btn"
-            onclick="onMediaSelectClick()" data-index="{INDEX}">
+            onclick="onMediaSelectClick(INDEX)">
              {NAME} <i class="fa fa-fw fa-check"></i>
          </a>
      </li>
@@ -99,10 +99,9 @@ function generateQualityButtons() {
         li_elem = document.createElement('li');
 
         a_elem = document.createElement('a');
-        a_elem.onclick = onMediaSelectClick;
+        a_elem.id = 'quality_option_' + i;
         a_elem.innerHTML = STREAM_URLS[i]['name'] + ' <i class="fa fa-fw fa-check"></i>';
-        a_elem.setAttribute('href', 'javascript:void(0);');
-        a_elem.setAttribute('data-index', '' + i);
+        a_elem.setAttribute('href', 'javascript:onMediaSelectClick(' + i + ');');
 
         if (i == default_stream) {
             a_elem.className = 'stream-quality-btn selected';
