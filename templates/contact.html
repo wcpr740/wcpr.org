@@ -12,13 +12,14 @@
         </div>
         <div class="row text-center">
             {% for site in contact_list %}
-            <div class="col-sm-2 col-xs-4">
-                <h4>{{ site.name }}</h4>
+            <div class="col-sm-3 col-xs-4">
+                <!--<h4>{{ site.name }}</h4>-->
                 <a class="btn btn-circle btn-lg social-{{ site.id }}"
                    href="{{ site.url }}">
                     <i class="fa {{ site.icon }} fa-fw"></i>
                 </a>
-                <p class="text-center"><a href="{{ site.url }}">{{ site.username }}</a></p>
+                <p><a href="{{ site.url }}">{{ site.username }}</a></p>
+                <br>
             </div>
             {% endfor %}
         </div>

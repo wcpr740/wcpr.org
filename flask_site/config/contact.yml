@@ -28,8 +28,20 @@
   url: https://wcpr740.slack.com/
   username: wcpr740
 
+- id: soundcloud
+  name: SoundCloud
+  icon: fa fa-soundcloud
+  url: https://soundcloud.com/wcpr
+  username: wcpr
+
 - id: requests
   name: Requests
   icon: fa fa-phone
   url: tel:201-216-3483
   username: (201) 216-3483
+
+- id: email
+  name: Email
+  icon: fa fa-at
+  url: mailto:info@wcpr.org
+  username: info@wcpr.org
