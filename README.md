@@ -1,4 +1,4 @@
-# wcpr.org
+# wcpr.org [![Build Status](https://travis-ci.org/wcpr740/wcpr.org.svg?branch=master)](https://travis-ci.org/wcpr740/wcpr.org)
 
 ## Setup
 
@@ -7,24 +7,22 @@
   3. Install npm requirements: `npm install -g less -g bower`
   4. Install bower requirements: `bower install`
   
-## Developing
+## Develop
 
 Run `start.py dev` to run a local Flask test server
 
 ## Build
 
-Run `freeze.py freeze` to build a static site to `/build` and then 
-serve that static site. Contents of `/build` will be silently replaced with new site.
+Run `freeze.py freeze` to build a static site to `/build`.
+Contents of `/build` will be silently replaced with new site.
 
 ## Deploy
 
-now_playing.json needs to be configured as the template for StationPlaylist output.
-In most cases, copy the file to "C:\Program Files (x86)\StationPlaylist\Studio\Templates".
-Thereafter, StationPlaylist can be configured to use that template and output it to the index of
-the WCPR site directory. The machine running StationPlaylist must also be set to use UTC time.
+Anything pushed to the `develop` branch will be built by [Travis CI](https://travis-ci.org/wcpr740/wcpr.org)
+and uploaded to [https://wcpr740.github.io/](https://wcpr740.github.io/).
 
-This is current configured by saving the file to the server via Windows SMB file-sharing protocol.
-
+When the `develop` branch is merged into the `master` branch, it will be built by Travis and automatically
+uploaded to [https://wcpr.org](https://wcpr.org).
 
 ## Needs
 
