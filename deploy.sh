@@ -9,7 +9,7 @@ REPO="https://github.com/wcpr740/wcpr740.github.io"
 TARGET_BRANCH="master"
 
 function doCompile {
-  python freeze.py freeze_dev
+  python freeze.py freeze_gh_pages
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify

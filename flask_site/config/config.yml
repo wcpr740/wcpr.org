@@ -5,11 +5,11 @@ default: &defaultConfig
     host: 'localhost'
     port: '5000'
     PREFERRED_URL_SCHEME: http  # http or https
-    FREEZER_BASE_URL: 'http://www.wcpr.org/'
+    FREEZER_BASE_URL: 'http://localhost:5000/'
     FREEZER_DESTINATION: 'build'  # must match $BUILD_FOLDER in deploy.sh
     FREEZER_DESTINATION_IGNORE: ['/.git*']  # allows for pushing build directory to github pages
     FREEZER_STATIC_IGNORE: ['bower_components/', '.webassets-cache/']
-    NOW_PLAYING_URL: 'http://127.0.0.1:5001/now_playing'  # see 740.wcpr.org repo
+    now_playing_url: 'http://127.0.0.1:5001/now_playing'  # see 740.wcpr.org repo
     DEBUG: True
     ASSETS_DEBUG: True
     calendar:
@@ -20,21 +20,24 @@ default: &defaultConfig
 dev:
   <<: *defaultConfig
 
+freeze_dev:
+  <<: *defaultConfig
+
 prod: &prodConfig
   <<: *defaultConfig
-  flask:
+  flask: &flaskProdConfig
     <<: *flaskConfig
+    PREFERRED_URL_SCHEME: https
+    now_playing_url: 'https://740.wcpr.org:8080/now_playing'
+    FREEZER_BASE_URL: 'https://wcpr.org/'
     DEBUG: False
     ASSETS_DEBUG: False
 
 freeze:
   <<: *prodConfig
 
-freeze_dev:
-  <<: *defaultConfig
+freeze_gh_pages:
+  <<: *prodConfig
   flask:
-    <<: *flaskConfig
-    DEBUG: False
-    ASSETS_DEBUG: False
-    PREFERRED_URL_SCHEME: https
+    <<: *flaskProdConfig
     FREEZER_BASE_URL: 'https://wcpr740.github.io/'

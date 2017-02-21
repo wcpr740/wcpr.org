@@ -95,16 +95,16 @@ function defaultEventClick(event, jsEvent, view) {
 
 function createScheduleCalendar() {
     $('#schedule_calendar').fullCalendar({
-        googleCalendarApiKey: GOOGLE_CALENDAR_CONFIG['api_key'],
+        googleCalendarApiKey: GLOBAL_SITE_CONFIG['calendar']['api_key'],
         eventSources: [
             {
-                googleCalendarId: GOOGLE_CALENDAR_CONFIG['autodj_id'],
+                googleCalendarId: GLOBAL_SITE_CONFIG['calendar']['autodj_id'],
                 className: 'schedule-autodj',
                 textColor: 'black',
                 eventDataTransform: defaultEventDataTransform
             },
             {
-                googleCalendarId: GOOGLE_CALENDAR_CONFIG['shows_id'],
+                googleCalendarId: GLOBAL_SITE_CONFIG['calendar']['shows_id'],
                 className: 'schedule-shows',
                 textColor: 'black',
                 eventDataTransform: defaultEventDataTransform

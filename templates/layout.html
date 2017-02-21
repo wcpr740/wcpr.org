@@ -14,10 +14,13 @@
     {% endassets %}
 
     <script>
-        GOOGLE_CALENDAR_CONFIG = {
-            api_key: '{{ config['calendar']['api_key'] }}',
-            autodj_id: '{{ config['calendar']['autodj_id'] }}',
-            shows_id: '{{ config['calendar']['shows_id'] }}'
+        GLOBAL_SITE_CONFIG = {
+            calendar: {
+                api_key: '{{ config['calendar']['api_key'] }}',
+                autodj_id: '{{ config['calendar']['autodj_id'] }}',
+                shows_id: '{{ config['calendar']['shows_id'] }}'
+            },
+            NOW_PLAYING_URL: '{{ config['now_playing_url'] }}'
         }
     </script>
 

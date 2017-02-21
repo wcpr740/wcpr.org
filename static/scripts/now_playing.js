@@ -1,11 +1,10 @@
-var NOW_PLAYING_URL = 'http://127.0.0.1:5001/now_playing',
-    DEFAULT_ERROR_DELAY = 2,
+var DEFAULT_ERROR_DELAY = 2,
     delay_on_error = DEFAULT_ERROR_DELAY;
 
 function loadNowPlaying() {
     $.ajax({
         'method': 'get',
-        'url': NOW_PLAYING_URL,
+        'url': window.GLOBAL_SITE_CONFIG['NOW_PLAYING_URL'],
         'dataType': 'jsonp',
         'jsonpCallback': 'nowPlayingCallback',
         'success': function() {

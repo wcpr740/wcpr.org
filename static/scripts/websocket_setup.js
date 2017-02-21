@@ -1,5 +1,5 @@
 function openSocket() {
-    socket = io.connect(NOW_PLAYING_URL);
+    socket = io.connect(window.GLOBAL_SITE_CONFIG['NOW_PLAYING_URL']);
     socket.on('connected', function () {
         socket.emit('get', {'delay': true});
     });
