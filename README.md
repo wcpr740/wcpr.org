@@ -28,6 +28,7 @@ uploaded to [https://wcpr.org](https://wcpr.org).
 
  - record library link
  - calendar for mobile units and events
+ - Link to TuneIn http://tunein.com/radio/WCPR-s45408/
 
 
 ## Wants
