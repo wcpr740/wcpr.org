@@ -7,7 +7,8 @@ default: &defaultConfig
     PREFERRED_URL_SCHEME: http  # http or https
     FREEZER_BASE_URL: 'http://www.wcpr.org/'
     FREEZER_DESTINATION: 'build'  # must match $BUILD_FOLDER in deploy.sh
-    FREEZER_DESTINATION_IGNORE: ['.git*']  # allows for pushing build directory to github pages
+    FREEZER_DESTINATION_IGNORE: ['/.git*']  # allows for pushing build directory to github pages
+    FREEZER_STATIC_IGNORE: ['bower_components/', '.webassets-cache/']
     NOW_PLAYING_URL: 'http://127.0.0.1:5001/now_playing'  # see 740.wcpr.org repo
     DEBUG: True
     ASSETS_DEBUG: True
