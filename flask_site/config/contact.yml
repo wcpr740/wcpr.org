@@ -42,6 +42,6 @@
 
 - id: email
   name: Email
-  icon: fa fa-at
+  icon: fa fa-envelope
   url: mailto:info@wcpr.org
   username: info@wcpr.org
