@@ -2,17 +2,17 @@ var STREAM_URLS = [
     {
         'name': 'Low - 64kbps',
         'type': 'mp3',
-        'url': 'http://740.wcpr.org:8080/stream64.mp3'
+        'url': 'https://740.wcpr.org:8080/stream64.mp3'
     },
     {
         'name': 'Med - 128kbps',
         'type': 'mp3',
-        'url': 'http://740.wcpr.org:8080/stream128.mp3'
+        'url': 'https://740.wcpr.org:8080/stream128.mp3'
     },
     {
         'name': 'High - 320kbps',
         'type': 'mp3',
-        'url': 'http://740.wcpr.org:8080/stream320.mp3'
+        'url': 'https://740.wcpr.org:8080/stream320.mp3'
     }
 ];
 var player_obj = $("#streaming_player"),
