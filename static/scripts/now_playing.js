@@ -31,7 +31,12 @@ function updateNowPlaying(data) {
         live = data['now'];
 
     // load current song into now playing
-    text_container.innerHTML = live['artist'] + ' - '  + live['title'];
+    if (live['ad'] || live['tag']) {
+        text_container.innerHTML = live['title'];
+    }
+    else {
+        text_container.innerHTML = live['artist'] + ' - '  + live['title'];
+    }
 
     // get progress bar ready to move
     var start_time = new Date(live['start']).getTime(),
