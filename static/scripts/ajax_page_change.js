@@ -23,7 +23,8 @@ var PAGE_EVENT_MAP = {
         'class': {
         },
         'id': {
-            'schedule_calendar': createScheduleCalendar
+            'schedule_calendar': createScheduleCalendar,
+            'now_playing_full': insertDetailedNowPlaying
         }
     }
 };

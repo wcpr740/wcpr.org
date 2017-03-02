@@ -1,5 +1,6 @@
 var DEFAULT_ERROR_DELAY = 2,
-    delay_on_error = DEFAULT_ERROR_DELAY;
+    delay_on_error = DEFAULT_ERROR_DELAY,
+    last_now_playing_data;
 
 function loadNowPlaying() {
     $.ajax({
@@ -25,18 +26,94 @@ function nowPlayingCallback(data) {
     setTimeout(loadNowPlaying, (remaining_seconds) * 1000);
 }
 
-function updateNowPlaying(data) {
-    var text_container = document.getElementById('now_playing'),
-        progress_bar = document.getElementById('play_progress'),
-        live = data['now'];
-
-    // load current song into now playing
-    if (live['ad'] || live['tag']) {
-        text_container.innerHTML = live['title'];
+function makeLastPlayingRow(entry) {
+    var row = document.createElement('tr'),
+        start = new Date(entry['start']),
+        hour = ((start.getHours() + 11) % 12 + 1),
+        minute = start.getMinutes() + '',
+        dd,
+        contents;
+    if (start.getHours() > 13) {
+        dd = 'PM';
     }
     else {
-        text_container.innerHTML = live['artist'] + ' - '  + live['title'];
+        dd = 'AM';
     }
+    if (hour < 10) {
+        hour = '0' + hour;
+    }
+    if (minute.length < 2) {
+        minute = '0' + minute;
+    }
+    contents = '<td><b>' + hour +  ':' + minute + ' ' + dd + '</b></td><td>'
+             + entry['title'] + ' - ' + entry['artist'] + '</td>';
+
+    row.innerHTML = contents;
+    return row;
+}
+
+function insertSimpleNowPlaying() {
+    var data = last_now_playing_data,
+        simple = document.getElementById('now_playing_simple'),
+        live = data['now'];
+    // load current song into now playing, it's always on page
+    if (live['ad'] || live['tag']) {
+        simple.innerHTML = live['title'];
+    }
+    else {
+        simple.innerHTML = live['artist'] + ' - '  + live['title'];
+    }
+}
+
+function insertDetailedNowPlaying() {
+    var data = last_now_playing_data,
+        full = document.getElementById('now_playing_full');
+
+    if (!full || !last_now_playing_data) {
+        return;  // don't load the now_playing_full if it's not on page.
+    }
+
+    var live = data['now'];
+    if (live['ad'] || live['tag']) {
+        live['img'] = '/static/images/logos/740disk_thumb.jpg';
+    }
+
+    full.innerHTML = '<h3>On Air</h3>';  // empty previous entries
+    var now = document.createElement('div'),
+        now_img = document.createElement('img'),
+        now_para = document.createElement('h4');
+
+    now.className = 'now-on-air';
+    now_img.src = live['img'];
+    now_para.innerHTML = live['title'] + '<br><small>' + live['artist'] + '</small>';
+
+    now.appendChild(now_img);
+    now.appendChild(now_para);
+
+    full.appendChild(now);
+    full.innerHTML += '<div class="clearfix"></div>';
+
+    full.innerHTML += '<h3>Past</h3>';
+    var previous = document.createElement('table');
+    previous.className = 'list-unstyled';
+    for (var i = 1, key = 'last' + i, added = 0; i <= 6; i += 1, key = 'last' + i) {
+        if (!data[key]['ad'] && !data[key]['tag']) {
+            previous.appendChild(makeLastPlayingRow(data[key]));
+            added++
+        }
+        if (added >= 3) {
+            break;
+        }
+    }
+    full.appendChild(previous);
+}
+
+function updateNowPlaying(data) {
+    var progress_bar = document.getElementById('play_progress'),
+        live = data['now'];
+    last_now_playing_data = data;
+    insertSimpleNowPlaying();
+    insertDetailedNowPlaying();
 
     // get progress bar ready to move
     var start_time = new Date(live['start']).getTime(),
