@@ -24,6 +24,7 @@ js_main:
         - bower_components/fullcalendar/dist/fullcalendar.js
         - bower_components/fullcalendar/dist/gcal.js
         - scripts/string_trim_polyfill.js
+        - scripts/index.js
         - scripts/player.js
         - scripts/now_playing.js
         - scripts/websocket_setup.js
