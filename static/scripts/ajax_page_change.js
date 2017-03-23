@@ -96,6 +96,9 @@ function loadPageEvents() {
             setTimeout(ifExistsIds[id], 0);
         }
     }
+    if (window.twttr) {  // load tweets if the twitter API is loaded
+        window.twttr.widgets.load();
+    }
 }
 
 
