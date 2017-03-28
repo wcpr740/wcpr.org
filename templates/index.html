@@ -3,29 +3,24 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-<div class="container">
+<section class="container">
     <div class="row">
         <div class="col-md-8" id="greeting_text">
-            <img src="/static/images/logos/logo2017_sm.png" class="img-responsive pull-left">
-            <h1>Welcome</h1>
-            WCPR is Stevens Institute of Technology's official radio station, providing original, independent programming that you can't hear anywhere else on the airwaves!
+            <img src="/static/images/logos/logo2017_sm.png" class="img-responsive pull-right">
+            <h1>WCPR - Castle Point Radio</h1>
+            WCPR - Castle Point Radio is Stevens Institute of Technology's official radio station.
             <br><br>
-            WCPR offers opportunities for Stevens students to gain experience with broadcasting, publicity & marketing. and business management. Come to our meetings 9:30 PM every Wednesday in the basement of Jacobus.
+            Not just known for our 24/7 original, independent programming, we're a welcoming community of music geeks that book shows with artists we love, offer lights and sound for events on campus, curate a one-of-a-kind record library, and provide students with valuable experience – whether it's in broadcasting, marketing, recording, business management, or arts advocacy!
+            <br><br>
+            Does what we do sound good to you? Then come on by our open meetings every Wednesday at 9:30 PM in the basement of the Jacobus Center.
         </div>
         <div class="col-md-4" id="now_playing_full">Loading...</div>
     </div>
+</section>
+<hr class="social">
+<section class="container-fluid">
     <div class="row">
-        <div class="col-md-6"><h2><i class="fa fa-fw fa-instagram"></i> Instas <small>by <a href="https://www.instagram.com/wcpr740/">wcpr740</a></small></h2>
-            <iframe src="//lightwidget.com/widgets/c617cd50dc40501e8e887b301f13e593.html"
-                    scrolling="no" allowtransparency="true" class="lightwidget-widget"
-                    style="width: 100%; border: 0; overflow: hidden;"></iframe>
-        </div>
-        <div class="col-md-6">
-            <h2><i class="fa fa-fw fa-twitter"></i> Tweets <small>by <a href="https://www.twitter.com/wcpr">@WCPR</a></small></h2>
-            <a class="twitter-timeline" data-theme="light"
-               data-height="1200" data-chrome="noscrollbar noheader nofooter noborders"
-               href="https://twitter.com/WCPR">Tweets by WCPR</a>
-        </div>
+        <ul class="juicer-feed" data-feed-id="wcpr" data-gutter="15"></ul>
     </div>
-</div>
+</section>
 {% endblock %}

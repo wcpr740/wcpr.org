@@ -1,5 +1,6 @@
 #greeting_text {
-  font-size: 20px;
+  font-size: 17px;
+  color: black;
 }
 
 .social_header {
@@ -18,4 +19,40 @@
 
 #twitter_color {
   color: @link-color;
+}
+
+hr.social {
+  padding: 0;
+  border: none;
+  border-top: medium double @text-color;
+  color: @text-color;
+  text-align: center;
+  margin: 20px 5%;
+
+  &:after {
+    .fa;
+    content: @fa-var-newspaper-o;
+    display: inline-block;
+    position: relative;
+    top: -0.6em;
+    font-size: 2em;
+    padding: 0 0.25em;
+    background: white;
+  }
+}
+
+.juicer-feed h1.referral a {
+  position: fixed;
+  left: 20px;
+  bottom: 5px;
+  z-index: 1000;
+  background-color: white;
+  .btn;
+  border: 2px solid @brand-primary;
+  color: @brand-primary;
+
+  &:hover, &:active {
+    border: 2px solid black;
+    color: black;
+  }
 }
