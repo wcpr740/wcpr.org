@@ -8,7 +8,7 @@ install:
 - bower install
 - pip install -r requirements.txt
 
-script: freeze.py freeze_gh_pages
+script: python freeze.py freeze_gh_pages
 
 deploy:
   provider: pages
