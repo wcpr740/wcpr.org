@@ -6,8 +6,7 @@ python:
 notifications:
   email: false
   slack:
-    rooms:
-      - $SLACK_TOKEN
+    secure: 6a7VYW0W+KQdKG2S3b3twje3hazWWc8rzndp53qbcUwd7l2ScogqH+pvy5I/puy+3K6fJBgMm0OS0FBs4/xltwz8L1pLXLaNencXd8PFx6JL9SPb3ilIcGQbVLhM0JrcOZYrZYBzUxXDhGWHLs/BMuzuO9gNdch5MP2qwlhVF4R1nTRT8R54wBMRKJCjdEL8xathhahlvyd1F7WOc5UIfLv6rPildCztl7GyH68d+IJCJVc+JZZnXX0VqUhg6dbMrHIsH2VpSiS3xO7C+v+fx4A2NTCDgitwSy9BIhRQwC8X95DE7TEySDlbyWTQPZL3opCfhbp4iqj9F2awJkaLPkejrktFcc83FljXWWh2wvlLEUdCowXU6/y5MuYYPPR99LthvoRjLDpSMJ549Ss/hs5/+XkAOAvL3uTs3TfUYzaRwYYdMc1D1ZZzuZOAqKfkaRicA8V4Y8KtfWktT4RtcnqDY30tFOO6if5hKneLdraUh8i85ewj+PsaURRASRB3fmjTjaPiE42AZl8Dd0bHbQmOEBf3O9zjXPkSed3a/WjEz7avaK0tlg9szbwgg7a777n2QEmVHkgL0NKIRkePb41l5XAUdZ0e8eVD+VftQOsQx4+ki+ZyEnql26o7hPcUpPBGbWa1TrZmU2ezh8jTnYAP5zZjYbODKPuIv8lrvmM=
     on_success: always
     on_failure: always
 
