@@ -3,6 +3,14 @@ cache: pip
 python:
 - '2.7'
 
+notifications:
+  email: false
+  slack:
+    rooms:
+      - $SLACK_TOKEN
+    on_success: always
+    on_failure: always
+
 install:
 - npm install -g bower -g less
 - bower install
