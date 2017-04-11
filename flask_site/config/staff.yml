@@ -8,11 +8,22 @@
   name: Andy Waldron
   image: andy_waldron_2016.jpg
   questions:
-    Major: Music & Technology, Visual Art & Technology Minor
+    Major: Music & Technology, Visual Arts & Technology Minor
     Hometown: Fair Haven, NJ
     Five Acts You Can't Go On Listening Without: David Bowie, Beck, J Dilla, Frank Ocean, Blur
     Favorite Movie: I'm Here, Spike Jonze
     Other Activities: Making playlists, puns, emails, talking about Kanye West, and long walks on the beach. In that order.
+
+
+- position: General Manager
+  email: gm@wcpr.org
+  name: Jackson Domenech
+  image: jackson_domenech_2016.jpg
+  questions:
+    Major: Chemical Engineering
+    Hometown: East Islip, NY
+    Five Acts you can't go on listening without: Arctic Monkeys, Modern Baseball, Broken Bells, Death Cab for Cutie, Gorillaz
+    Other Activities: Video Games, Playing Guitar, Listening to Music
 
 
 - position: Programming Manager
@@ -24,6 +35,17 @@
     Hometown: Andover, MA
     Five Acts You Can't Go On Listening Without: Led Zeppelin, Spoon, The Strokes, Franz Ferdinand, Arctic Monkeys
     Other Activities: Being Dave
+
+
+- position: Programming Manager
+  email: programming@wcpr.org
+  name: Emma Murphy
+  image: emma_murphy_2016.jpg
+  questions:
+    Major: Business & Technology
+    Hometown: Brielle, NJ
+    Five Acts You Can't Go On Listening Without: Frankie Cosmos, Mitski, The Lawrence Arms, Screaming Females, The Cure
+    Other Activities: shredding, embroidering, slaughtering the patriarchy
 
 
 - position: Business Manager
@@ -39,44 +61,40 @@
     Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=2H5uWRjFsGc">Chumbawamba - Tubthumping</a>
 
 
-- position: Publicity Manager
+- position: Publicity Manager & Webmaster
   email: publicity@wcpr.org
-  name: Emma Murphy
-  image: emma_murphy_2016.jpg
+  name: Kevin Poli
+  image: kevin_poli_2017.png
   questions:
-    Major: Business & Technology
-    Hometown: Brielle, NJ
-    Five Acts You Can't Go On Listening Without: Frankie Cosmos, Mitski, The Lawrence Arms, Screaming Females, The Cure
-    Other Activities: playing bass & drums, watching tv & movies, slaughtering the patriarchy
+    Major: Computer Science / Visual Arts & Technology
+    Hometown: North Brunswick, NJ
+    Favorite Movie: Clerks
+    Five Acts You Can't Go On Listening Without: American Football, Car Seat Headrest, Kanye West, Elliott Smith, MF DOOM
+    Other Activities: Filmmaking, Browsing Sites on The Net&trade;, Guitar, Philosophy
 
 
 - position: Station Engineer
   email: engineer@wcpr.org
-  name: Jackson Domenech
-  image: jackson_domenech_2016.jpg
+  name: Tom Bloxam
+  image: tom_bloxam_2017.jpg
   questions:
-    Major: Chemical Engineering
-    Hometown: East Islip, NY
-    Five bands you can't go on listening without: Arctic Monkeys, Modern Baseball, Broken Bells, Death Cab for Cutie, Gorillaz
-    Other Activities: Video Games, Playing Guitar, Listening to Music
+    Major: Music & Technology
+    Hometown: Lehigh, PA & London, England
+    Six Acts You Can't Go On Listening Without: Caribou, Daft Punk, Flume, War On Drugs, Mumford and Sons, Elvis Presley
+    Favourite Movie: Fight Club
+    Unknown Unguilty Pleasure: ABBA's Greatest Hits
 
 
-#- position: Office Manager
-#  email: office@wcpr.org
-#  name:
-#  image:
-
-
-- position: Record Librarian
-  email: records@wcpr.org
-  name: Tori Davis
-  image: tori_davis_2016.jpg
+- position: Office Manager
+  email: office@wcpr.org
+  name: Juliet Yeomans
+  image: juliet_yeomans_2017.jpg
   questions:
-    Major: Mechanical Engineering
-    Hometown: Audubon, NJ
-    Five bands you can't go on listening without: Joyce Manor, Wavves, glocca morra, The Promise Ring, Dogs on Acid
-    Favorite TV Show to Binge Watch: Portlandia
-    Other Activities: Ditching Stevens for a semester to travel around Europe.
+    Major: Engineering Management
+    Hometown: Northport, Long Island
+    Guilty Please Song: Literally any Ariana Grande song
+    Four Acts You Can't Go On Listening Without: The Beatles, The National, Bon Iver, Bright Eyes
+    Favorite Movie: Juno
 
 
 - position: Record Librarian
@@ -92,6 +110,17 @@
     Other Activities: Reading, Playing Music, Video Games
 
 
+- position: Record Librarian
+  email: records@wcpr.org
+  name: Noah Grande
+  image: noah_grande_2017.jpg
+  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+  questions:
+    Major: Music & Technology
+    Hometown: Montclair, NJ
+    Favorite Movie: "Speed 2: Cruise Control"
+
+
 - position: WAA Liaison
   email: waa@wcpr.org
   name: Gianluca Borrelli
@@ -103,6 +132,18 @@
     Favorite Movie: The Notebook
     Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=kT3OQwyvKmk">U Guessed It - OG Maco</a>
     Other Activities: going to concerts, skiing, netflix n' chill, satanic rituals, paganism, bible study
+
+
+- position: WAA Liaison
+  email: waa@wcpr.org
+  name: Tori Davis
+  image: tori_davis_2016.jpg
+  questions:
+    Major: Mechanical Engineering
+    Hometown: Audubon, NJ
+    Five bands you can't go on listening without: Joyce Manor, Wavves, glocca morra, The Promise Ring, Dogs on Acid
+    Favorite TV Show to Binge Watch: Portlandia
+    Other Activities: Ditching Stevens for a semester to travel around Europe.
 
 
 - position: System Administrator & Webmaster
@@ -120,5 +161,7 @@
   image: dylan_digeronimo_2017.jpg
   questions:
     Major: Computer Science
+    Hometown: Budd Lake, NJ
+    Guilty Please Song: Wuthering Height by Kate Bush
     Five Acts You Can't Go On Listening Without: Against Me!, Bon Iver, Modern Baseball, Neutral Milk Hotel, Mac DeMarco
     Other Activities: Playing guitar, drinking LaCroix, pronouncing space "spa-ché"
