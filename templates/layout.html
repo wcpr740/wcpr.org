@@ -38,39 +38,44 @@
 <div id="streaming_player"></div>
 
 <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
-    <div class="navbar-header pull-left">
+    <div class="navbar-header navbar-center-on-collapse">
         <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img class="img-responsive" src="/static/images/logos/seeperlogo_trans.gif"> <span class="brand-name hidden">{{ config['name'] }}</span>
+            <img class="img-responsive" src="/static/images/logos/seeperlogo_trans.gif">
+            <span class="brand-name hidden">{{ config['name'] }}</span>
         </a>
     </div>
-    <div class="navbar-header pull-right">
-        <ul class="nav navbar-nav">
-            <li id="play_disabled">
-                <i class="fa fa-spinner fa-pulse"></i>
-                <span class="sr-only">Loading...</span>
-            </li>
-            <li id="jp_container_1" class="hidden">
-                <i class="fa fa-play-circle-o jp-play"></i><span class="sr-only jp-play">Play</span>
-                <i class="fa fa-pause-circle-o jp-pause"></i><span class="sr-only jp-pause">Pause</span>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
-                    <i class="fa fa-caret-down"></i>
-                </a>
-                <ul id="quality_select_dropdown" class="dropdown-menu dropdown-menu-right">
-                </ul>
-            </li>
-        </ul>
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="nav_collapse" data-target="#nav_collapse" aria-expanded="false" aria-controls="nav_collapse">
+    <div class="navbar-right">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_collapse" aria-expanded="false" aria-controls="nav_collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
     </div>
+
+    <div class="navbar-right navbar-left-on-collapse">
+        <ul class="nav navbar-nav">
+            <li id="play_disabled" class="hidden">
+                <i class="fa fa-spinner fa-pulse"></i>
+                <span class="sr-only">Loading</span>
+            </li>
+            <li id="jp_toggle_play">
+                <i class="fa fa-play-circle-o play"></i><span class="sr-only play">Play</span>
+                <i class="fa fa-stop-circle-o stop"></i><span class="sr-only stop">Stop</span>
+            </li>
+            <li class="dropdown">
+                <a id="quality_select_toggle" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <ul id="quality_select_dropdown" class="dropdown-menu dropdown-menu-right">
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <div id="nav_collapse" class="navbar-collapse collapse navbar-left">
-        <ul class="nav navbar-nav pull-left">
+        <ul class="nav navbar-nav navbar-left">
             <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
             <li><a href="{{ url_for('mobile_unit') }}">Mobile Units</a></li>
             <li><a href="{{ url_for('contact') }}">Contact</a></li>
@@ -118,9 +123,9 @@
 
 </body>
 
-<script async src="//assets.juicer.io/embed-no-jquery.js" type="text/javascript"></script>
 {% assets "js_main" %}
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
 {% endassets %}
+<script async src="//assets.juicer.io/embed-no-jquery.js" type="text/javascript"></script>
 
 </html>

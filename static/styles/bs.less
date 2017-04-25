@@ -33,8 +33,42 @@
 }
 
 .navbar-brand {
+  padding: 30px 5px;
+
   > img {
-    margin-top: -20px;
+    margin-top: -5.5%;
+  }
+}
+
+@media (max-width: @grid-float-breakpoint) {
+ .navbar-center-on-collapse {  // center navbar-brand when collapsed
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+  }
+
+  .navbar-left-on-collapse {
+    position: absolute;
+    left: 0;
+    .navbar-nav {
+      margin: 0 5px;
+      & > li {
+        float: left;
+        a {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    margin-top: @navbar-height;
+    text-align: right;
+
+    .dropdown ul {
+      text-align: right;
+    }
   }
 }
 

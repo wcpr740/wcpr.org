@@ -1,4 +1,4 @@
-var STREAM_URLS = [
+var STREAM_URLS = [  // URLs cannot have params or cache-buster in setMediaURL() needs to be adjusted
     {
         'name': 'Low - 64kbps',
         'type': 'mp3',
@@ -17,42 +17,75 @@ var STREAM_URLS = [
 ];
 var player_obj = $("#streaming_player"),
     was_playing = false,
-    default_stream = 1;
+    default_stream = 1,
+    playing_stream_index = default_stream;
 
 player_obj.jPlayer({
     ready: function () {
         setMediaURL(default_stream);
     },
     swfPath: '/static/bower_components/jPlayer/dist/jquery.jplayer.swf',
-    cssSelectorAncestor: "#jp_container_1",
+    cssSelectorAncestor: "#jp_toggle_play",
     solution: "html,flash",
     useStateClassSkin: true,
     autoBlur: false,
     smoothPlayBar: true,
-    keyEnabled: true
+    keyEnabled: false,
+    preload: 'none',
+    volume: 1
 });
+
+
+function setPlayerLoading(yes) {
+    var loading_icon = $('#play_disabled'),
+        player_buttons = $('#jp_toggle_play');
+
+    if (yes) {
+        loading_icon.removeClass('hidden');
+        player_buttons.addClass('hidden');
+    }
+    else {
+        loading_icon.addClass('hidden');
+        player_buttons.removeClass('hidden');
+    }
+}
+
+
+function playStream() {
+    was_playing = true;
+    setPlayerLoading(true);
+    setMediaURL(playing_stream_index);
+    $(player_obj).jPlayer('play');
+}
+
+function stopStream() {
+    was_playing = false;
+    player_obj.jPlayer('clearMedia');
+}
+
+function onStreamToggleClick() {
+    if (was_playing) {
+        stopStream();
+    }
+    else {
+        playStream();
+    }
+}
+
+document.getElementById('jp_toggle_play').onclick = onStreamToggleClick;
+
 
 player_obj.bind($.jPlayer.event.canplay, function() {
-    $('#play_disabled').addClass('hidden');
-    $('#jp_container_1').removeClass('hidden');
-    if (was_playing) {  // occurs when a user changes quality while playing
-        $(player_obj).jPlayer('play');
-    }
+    // triggers after jPlayer has loaded the media URL
+    setPlayerLoading(false);
 });
 
-player_obj.bind($.jPlayer.event.play, function() {
-    was_playing = true;
-});
-
-player_obj.bind($.jPlayer.event.pause, function() {
-    was_playing = false;
-});
 
 function setMediaURL(index) {
     var params = {
         title: 'WCPR - Castle Point Radio'
     };
-    params[STREAM_URLS[index]['type']] = STREAM_URLS[index]['url'];
+    params[STREAM_URLS[index]['type']] = STREAM_URLS[index]['url'] + '?_=' + Date.now();  // cache-buster
 
     $(player_obj).jPlayer("setMedia", params);
 }
@@ -62,14 +95,14 @@ function onMediaSelectClick(selected_index) {
     if ($(el).hasClass('selected')) {
         return;
     }
-    var quality_buttons = document.getElementsByClassName('stream-quality-btn');
-    // change the media stream to the selected one
-    setMediaURL(parseInt(selected_index));
-    // hide the play button until the media is loaded
-    $('#jp_container_1').addClass('hidden');
-    $('#play_disabled').removeClass('hidden');
+    playing_stream_index = selected_index;
+
+    if (was_playing) {
+        playStream();
+    }
 
     // change the quality buttons so the correct one has a checkmark and no others do
+    var quality_buttons = document.getElementsByClassName('stream-quality-btn');
     for (var i = 0; i < quality_buttons.length; i++) {
         if (quality_buttons[i] == el) {
             quality_buttons[i].className = 'stream-quality-btn selected';
