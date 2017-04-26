@@ -32,6 +32,14 @@
   }
 }
 
+@nav-gradient-left: @brand-primary;
+@nav-gradient-right: @brand-info;
+.navbar-inverse {
+  background: @nav-gradient-left;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, @nav-gradient-left, @nav-gradient-right);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, @nav-gradient-left, @nav-gradient-right); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .navbar-brand {
   padding: 30px 5px;
 
