@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block front_matter -%}
+{% if not config.get('DEBUG') -%}
+---
+permalink: /404.html
+---
+{%- endif %}
+{%- endblock %}
+
+{% block title %}Page Not Found | {% endblock %}
+
+{% block body %}
+<section id="error_page">
+    <div class="container">
+        <br>
+        <h1>
+            Oh dear...<br>
+            <span class="smaller">404 Page Not Found</span>
+        </h1>
+    </div>
+</section>
+{% endblock %}

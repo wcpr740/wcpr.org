@@ -24,7 +24,8 @@ var PAGE_EVENT_MAP = {
         },
         'id': {
             'schedule_calendar': createScheduleCalendar,
-            'now_playing_full': insertDetailedNowPlaying
+            'now_playing_full': insertDetailedNowPlaying,
+            'error_page': loadErrorPage
         }
     }
 };

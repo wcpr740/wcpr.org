@@ -30,6 +30,7 @@ js_main:
         - scripts/websocket_setup.js
         - scripts/analytics.js
         - scripts/schedule.js
+        - scripts/error.js
         - scripts/ajax_page_change.js  # keep this at the end so it can access all events
 
 styles_main:
