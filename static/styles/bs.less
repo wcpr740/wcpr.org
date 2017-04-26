@@ -33,7 +33,7 @@
 }
 
 @nav-gradient-left: @brand-primary;
-@nav-gradient-right: @brand-info;
+@nav-gradient-right: mix(@brand-primary, @brand-info);
 .navbar-inverse {
   background: @nav-gradient-left;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, @nav-gradient-left, @nav-gradient-right);  /* Chrome 10-25, Safari 5.1-6 */
