@@ -20,8 +20,8 @@ register_filters()
 bundles_config = read_config('bundles.yml')
 compile_assets(app, bundles_config)
 
-# LOAD THE ROUTES
-from flask_site.controllers import *
-
 # INITIALIZE FREEZER
 freezer = Freezer(app)
+
+# LOAD THE ROUTES
+from flask_site.controllers import *
