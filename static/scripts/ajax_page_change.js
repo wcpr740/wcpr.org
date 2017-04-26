@@ -151,9 +151,9 @@ function navigate(href) {
             history.pushState(href, href, href); // in actuality only need the last one
             linkCallback(data);
         },
-        error: function () {
-            // when there's an error, navigate to the error'd page.
-            document.location.href = href;
+        error: function (response) {
+            history.pushState(href, href, href); // in actuality only need the last one
+            linkCallback(response.responseText);
         }
     });
 }
@@ -184,9 +184,8 @@ window.addEventListener('popstate', function(e) {
         data: {'json': ''},
         url: document.location.href,
         success: linkCallback,
-        error: function() {
-            // use regular page change if there's an error
-            document.location.href = document.location.href;
+        error: function(response) {
+            linkCallback(response.responseText);
         }
     });
 });
