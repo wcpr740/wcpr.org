@@ -18,16 +18,26 @@ install:
 - bower install
 - pip install -r requirements.txt
 
-script: python freeze.py freeze_gh_pages
+script: python freeze.py freeze
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard
-  repo: wcpr740/wcpr740.github.io
-  target_branch: master
-  local_dir: build
-  email: webmaster@wcpr.org
-  name: WCPR Webmaster
-  on:
-    branch: develop
+  - on:
+      branch: develop
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard
+    repo: wcpr740/wcpr740.github.io
+    target_branch: master
+    local_dir: build
+    email: webmaster@wcpr.org
+    name: WCPR Webmaster
+  - on:
+      branch: master
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard
+    repo: wcpr740/wcpr.org
+    target_branch: gh-pages
+    local_dir: build
+    email: webmaster@wcpr.org
+    name: WCPR Webmaster
