@@ -80,15 +80,20 @@ function insertDetailedNowPlaying() {
 
     full.innerHTML = '<h3>On Air</h3>';  // empty previous entries
     var now = document.createElement('div'),
+        now_link = document.createElement('a'),
         now_img = document.createElement('img'),
         now_para = document.createElement('h4');
+
+    now_link.href = live['url'];
+    now_link.title = 'Click to purchase on Amazon';
 
     now.className = 'now-on-air';
     now_img.src = live['img'];
     now_para.innerHTML = live['title'] + '<br><small>' + live['artist'] + '</small>';
 
-    now.appendChild(now_img);
+    now_link.appendChild(now_img);
     now.appendChild(now_para);
+    now.appendChild(now_link);
 
     full.appendChild(now);
     full.innerHTML += '<div class="clearfix"></div>';
