@@ -8,6 +8,7 @@
     "parsleyjs": "^2.4.4",
     "jPlayer": "jplayer#^2.9.2",
     "socket.io-client": "^1.7.2",
-    "fullcalendar": "^3.1.0"
+    "fullcalendar": "^3.1.0",
+    "js-cookie": "^2.1.4"
   }
 }

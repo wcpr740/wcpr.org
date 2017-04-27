@@ -70,6 +70,7 @@ function onStreamToggleClick() {
     else {
         playStream();
     }
+    closeListenNowNotification();
 }
 
 document.getElementById('jp_toggle_play').onclick = onStreamToggleClick;
@@ -89,6 +90,12 @@ function setMediaURL(index) {
 
     $(player_obj).jPlayer("setMedia", params);
 }
+
+
+/*
+ * Media selection buttons
+ */
+
 
 function onMediaSelectClick(selected_index) {
     var el = document.getElementById('quality_option_' + selected_index);
@@ -151,9 +158,40 @@ function generateQualityButtons() {
 // When page is loaded, generate the quality buttons.
 generateQualityButtons();
 
+var listen_now_timeout = undefined;
+function showListenNowNotification() {
+    if (Cookies.get('notified')) {
+        return;
+    }
+    var play_button = $('#jp_toggle_play');
+    play_button.popover({
+        'template': '<div class="popover popover-listen" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>',
+        'content': 'Click here to listen now!',
+        'container': 'body',
+        'placement': 'bottom',
+        'trigger': 'manual',
+        'delay': 1000
+    });
+    listen_now_timeout = setTimeout(function() {
+        play_button.popover('show');
+        Cookies.set('notified', 'yes', {expires: 365});
+        setTimeout(closeListenNowNotification, 10000);
+    }, 5000);
+}
+
+function closeListenNowNotification() {
+    $('#jp_toggle_play').popover('hide');
+    if (listen_now_timeout) {
+        clearTimeout(listen_now_timeout);
+    }
+}
+
+// When page is loaded, show notification to listen.
+showListenNowNotification();
+
+
 var CONFIRMATION_MESSAGE = "Leaving the page now will stop your music.\nAre you sure you want leave?",
     has_prompted_to_leave = 0;  // used to prevent multiple prompts
-
 
 // If music is playing when the user tries to leave, warn the user.
 window.onbeforeunload = function() {
