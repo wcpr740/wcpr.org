@@ -33,7 +33,7 @@ function makeLastPlayingRow(entry) {
         minute = start.getMinutes() + '',
         dd,
         contents;
-    if (start.getHours() > 13) {
+    if (start.getHours() >= 12) {
         dd = 'PM';
     }
     else {

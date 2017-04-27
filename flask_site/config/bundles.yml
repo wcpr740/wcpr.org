@@ -23,6 +23,7 @@ js_main:
         - bower_components/moment/moment.js
         - bower_components/fullcalendar/dist/fullcalendar.js
         - bower_components/fullcalendar/dist/gcal.js
+        - bower_components/js-cookie/src/js.cookie.js
         - scripts/string_trim_polyfill.js
         - scripts/index.js
         - scripts/player.js
