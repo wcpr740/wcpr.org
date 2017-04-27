@@ -5,10 +5,39 @@
 <!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta id="twitter_color" name="twitter:widgets:link-color">
+
+    <!-- Search Engine -->
+    <meta name="description" content="{{ config['description'] }}">
+    <meta name="image" content="{{ config['logo'] }}">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="{{ config['name_long'] }}">
+    <meta itemprop="description" content="{{ config['description'] }}">
+    <meta itemprop="image" content="{{ config['logo'] }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ config['name_long'] }}">
+    <meta name="twitter:description" content="{{ config['description'] }}">
+    <meta name="twitter:site" content="@wcpr">
+    <meta name="twitter:image:src" content="{{ config['logo'] }}">
+    <meta name="twitter:widgets:link-color" id="twitter_color" >
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="{{ config['name_long'] }}">
+    <meta name="og:description" content="{{ config['description'] }}">
+    <meta name="og:image" content="{{ config['logo'] }}">
+    <meta name="og:url" content="https://wcpr.org">
+    <meta name="og:site_name" content="{{ config['name_long'] }}">
+    <meta name="og:locale" content="en_US">
+    <meta name="fb:admins" content="29608240127">
+    <meta name="og:type" content="website">
+
+
+
     <title>{% block title %}{% endblock %}{{ config['name_long'] }}</title>
 
     <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">

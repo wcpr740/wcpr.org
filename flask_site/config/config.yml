@@ -2,6 +2,8 @@ default: &defaultConfig
   flask: &flaskConfig
     name: 'WCPR'
     name_long: 'WCPR - Castle Point Radio'
+    description: "WCPR - Castle Point Radio is Stevens Institute of Technology's official radio station."
+    logo: 'https://wcpr.org/static/images/logos/logo2017.png'
     host: 'localhost'
     port: '5000'
     PREFERRED_URL_SCHEME: http  # http or https
