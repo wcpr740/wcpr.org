@@ -44,6 +44,7 @@ prod: &prodConfig
     PREFERRED_URL_SCHEME: https
     now_playing_url: 'https://740.wcpr.org:8080/now_playing'
     FREEZER_BASE_URL: 'https://wcpr.org/'
+    RESIZE_ROOT: 'build'
     DEBUG: False
     ASSETS_DEBUG: False
 
