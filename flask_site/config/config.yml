@@ -3,17 +3,29 @@ default: &defaultConfig
     name: 'WCPR'
     name_long: 'WCPR - Castle Point Radio'
     description: "WCPR - Castle Point Radio is Stevens Institute of Technology's official radio station."
+    now_playing_url: 'http://127.0.0.1:5001/now_playing'  # see https://github.com/wcpr740/740.wcpr.org
     logo: 'https://wcpr.org/static/images/logos/logo2017.png'
+
+    # Flask config
     host: 'localhost'
     port: '5000'
     PREFERRED_URL_SCHEME: http  # http or https
+    DEBUG: True
+    ASSETS_DEBUG: True
+
+    # Freezer config
     FREEZER_BASE_URL: 'http://localhost:5000/'
     FREEZER_DESTINATION: 'build'  # must match $BUILD_FOLDER in deploy.sh
     FREEZER_DESTINATION_IGNORE: ['/.git*']  # allows for pushing build directory to github pages
     FREEZER_STATIC_IGNORE: ['bower_components/', '.webassets-cache/']
-    now_playing_url: 'http://127.0.0.1:5001/now_playing'  # see https://github.com/wcpr740/740.wcpr.org
-    DEBUG: True
-    ASSETS_DEBUG: True
+
+    # Flask-Image config
+    RESIZE_STORAGE_BACKEND: 'file'
+    RESIZE_URL: '/'
+    RESIZE_ROOT: '.'
+    RESIZE_TARGET_DIRECTORY : 'static/out/images'
+
+    # Google Calendar config
     calendar:
       api_key: 'AIzaSyB3uiiC1cR_5W1rF5paNQpR_quDIVnhuro'
       autodj_id: 'wcpr.org_c2mvtft9shfdmenddasmqcdmg8@group.calendar.google.com'
@@ -32,6 +44,7 @@ prod: &prodConfig
     PREFERRED_URL_SCHEME: https
     now_playing_url: 'https://740.wcpr.org:8080/now_playing'
     FREEZER_BASE_URL: 'https://wcpr.org/'
+    RESIZE_ROOT: 'build'
     DEBUG: False
     ASSETS_DEBUG: False
 

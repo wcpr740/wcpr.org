@@ -1,5 +1,9 @@
+import os
+
 from flask import Flask
+
 from flask_frozen import Freezer
+from flask_resize import Resize
 
 from flask_site.helpers.config import read_config
 from flask_site.helpers.assets import register_filters, compile_assets
@@ -19,6 +23,9 @@ app.config.update(flask_config)
 register_filters()
 bundles_config = read_config('bundles.yml')
 compile_assets(app, bundles_config)
+if not os.path.exists(flask_config.get('RESIZE_ROOT')):
+    os.mkdir(flask_config.get('RESIZE_ROOT'))  # pre-make folder for images
+resize = Resize(app)
 
 # INITIALIZE FREEZER
 freezer = Freezer(app)

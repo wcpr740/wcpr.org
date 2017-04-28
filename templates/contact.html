@@ -65,8 +65,11 @@
     {% for person in staff %}
         <div class="row staff-row" id="staff_{{ person['email'].split('@')[0] }}">
             <div class="col-sm-3 col-xs-12 staff-img-cont">
-                <img src="{{ '/static/images/staff/%s' % person['image'] }}"
-                     class="img-responsive">
+                {% set img_url = '/static/images/staff/%s' % person['image'] %}
+                <a href="{{ img_url }}" target="_self" title="{{ person['name'] }}">
+                    <img src="{{ img_url|resize('350', format='JPEG') }}" alt="{{ person['name'] }}"
+                         class="img-responsive">
+                </a>
             </div>
             <div class="col-sm-9">
                 <h2>{{ person['name'] }} <small>{{ person['position'] }}</small></h2>
