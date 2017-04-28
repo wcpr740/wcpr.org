@@ -1,19 +1,8 @@
-var error_page_styles = [
-    {
-        'img': '/static/images/error/explode.jpg',
-        'color': '#000',
-        'bg_color': '#cbcbcd'
-    },
-    {
-        'img': '/static/images/error/fire.jpg',
-        'color': '#fff',
-        'bg_color': '#6a280e'
-    }
-];
 
 function loadErrorPage() {
     var error_page = document.getElementById('error_page'),
-        style = error_page_styles[Math.floor(Math.random() * error_page_styles.length)],
+        all_styles = $.parseJSON(document.getElementById('error_styles').innerHTML),
+        style = all_styles[Math.floor(Math.random() * all_styles.length)],
         navbar = document.getElementById('navbar'),
         now_playing = document.getElementById('now_playing_container'),
         progress = document.getElementById('play_progress_container');
