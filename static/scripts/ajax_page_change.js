@@ -145,7 +145,6 @@ function navigate(href) {
      */
     $.ajax({
         dataType: "text",
-        cache: false,
         url: href,
         success: function(data) {
             history.pushState(href, href, href); // in actuality only need the last one
@@ -180,8 +179,6 @@ window.addEventListener('popstate', function(e) {
      */
     $.ajax({
         dataType: "text",
-        cache: false,
-        data: {'json': ''},
         url: document.location.href,
         success: linkCallback,
         error: function(response) {
