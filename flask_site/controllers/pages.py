@@ -40,3 +40,8 @@ def mobile_unit():
 @app.route('/schedule/')
 def schedule():
     return render_template('schedule.html', show_formats=show_formats)
+
+
+@app.route('/google1a634e4bb4a95a2f.html')
+def google_search_console_verification():
+    return 'google-site-verification: google1a634e4bb4a95a2f.html'
