@@ -32,7 +32,7 @@
 // Generate colors for each variety of show. Keep this in sync with show_formats.yml
 // HTML color codes will also work perfectly.
 //     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BOTTOM BORDER);
-.show-format-gen(easy,          yellow,       black);
+.show-format-gen(easy,          lighten(yellow, 20%),       black);
 .show-format-gen(rock,          darkred,      white);
 .show-format-gen(classic-rock,  darkblue,     white);
 .show-format-gen(talk,          darkgreen,    white);
@@ -48,6 +48,7 @@
   &:focus {
     outline: none;
   }
+  
 }
 
 .fc-events-full-width() {
