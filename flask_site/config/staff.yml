@@ -45,7 +45,7 @@
   questions:
     Major: Computer Science / Visual Arts & Technology
     Hometown: North Brunswick, NJ
-    Yes: I am the only one allowed to use the <blink> &gt;blink&lt; </blink> tag
+  description: I am the only one allowed to use the <span class="blink">&lt;blink&gt;</span> tag
 
 
 - position: Station Engineer
