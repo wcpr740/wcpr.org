@@ -2,8 +2,16 @@
   font-size: 17px;
   color: @gray-dark;
   h1 {
-      font-weight:bold;
-      font-style:italic;
+      font-weight:extra-bold;
+      
+  }
+  font-weight: semibold;
+  
+  b {
+      font-style: italic;
+  }
+  hr {
+      border: solid 1px @gray-light;
   }
 }
 
@@ -52,13 +60,13 @@ hr.social {
   z-index: 1000;
   background-color: @beige;
   .btn;
-  text-transform: none;
+  text-transform: lowercase;
   border: 2px solid @brand-primary;
   color: @brand-primary;
 
   &:hover {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid @gray;
+    color: @gray;
   }
 
   &:active, &:focus {

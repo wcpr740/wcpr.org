@@ -2,7 +2,9 @@
 
 ## Setup :package:
 
-  1. Setup a virtualenv: `virtualenv env` (and activate: `env\Scripts\activate`)
+  1. Setup a virtualenv: `virtualenv env` (and activate: `env\Scripts\activate`
+     on windows
+     or source: `env/bin/sctivate` on macOS and Linux)
   2. Install Python requirements: `pip install -r requirements.txt` * **NOTE:**
      this site is built with Python 2, all pip dependencies must install their
      python2 versions, if this is a problem, use pip2 *

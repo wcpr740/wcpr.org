@@ -32,15 +32,15 @@
 // Generate colors for each variety of show. Keep this in sync with show_formats.yml
 // HTML color codes will also work perfectly.
 //     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BOTTOM BORDER);
-.show-format-gen(easy,          lighten(yellow, 20%),       black);
-.show-format-gen(rock,          darkred,      white);
-.show-format-gen(classic-rock,  darkblue,     white);
-.show-format-gen(talk,          darkgreen,    white);
-.show-format-gen(metal,         orange,       black);
-.show-format-gen(electronic,    black,        white);
-.show-format-gen(variety,       pink,         black);
-.show-format-gen(hip-hop,       purple,       white);
-.show-format-gen(indie,         cyan,         black);
+.show-format-gen(easy,          lighten(#987284, 20%),       black);
+.show-format-gen(rock,          #9DBF9E,      black);
+.show-format-gen(classic-rock,  #D0D6B5,     black);
+.show-format-gen(talk,          #F9B5AC,    black);
+.show-format-gen(metal,         #EE7674,       white);
+.show-format-gen(electronic,    @gray-dark,        white);
+.show-format-gen(variety,       #DEBA6F,         black);
+.show-format-gen(hip-hop,       #7b7554,       white);
+.show-format-gen(indie,         @gray-light,         @beige);
 .show-format-gen(pop,           lightgray,    black);
 
 
@@ -66,6 +66,7 @@
       display: none;
     }
     .fc-shows-toggle-button {
+        background-color: @brand-primary;
       .fc-state-down;
     }
   }
@@ -75,6 +76,7 @@
       display: none;
     }
     .fc-autodj-toggle-button {
+        background-color: @gray-light;
       .fc-state-down;
     }
   }

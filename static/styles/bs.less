@@ -25,7 +25,7 @@
 
 .navbar {
     
-    border-bottom: 1px solid @beige;
+    
   .nav > li > a {
     .sandstone;
   }
@@ -36,10 +36,10 @@
   }
 }
 
-@nav-gradient-left: @gray-light;
+
 @nav-gradient-right: mix(@brand-primary, @brand-info);
 .navbar-inverse {
-  background: @nav-gradient-left; /* fallback for old browsers */
+  background: @gray-light; /* fallback for old browsers */
   
 }
 
@@ -61,6 +61,7 @@
  .navbar-center-on-collapse {  // center navbar-brand when collapsed
    position: absolute;
    left: 50%;
+   top: -20%;
    transform: translateX(-50%);
   }
 
