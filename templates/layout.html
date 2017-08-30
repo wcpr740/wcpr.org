@@ -80,7 +80,7 @@
 <nav class="navbar navbar-inverse navbar-static-top" id="navbar">
     <div class="navbar-header navbar-center-on-collapse">
         <a class="navbar-brand" href="{{ url_for('index') }}">
-            <img class="img-responsive" src="/static/images/logos/seeperlogo_trans.gif">
+            <img class="img-responsive" src="/static/images/logos/wcprwebsafe2.png">
             <span class="brand-name hidden">{{ config['name'] }}</span>
         </a>
     </div>
@@ -152,7 +152,7 @@
         </div>
         <div class="right">
             {% for site in contact_list %}
-                <a class="btn btn-circle social-gray"
+                <a class="btn btn-circle btn-primary"
                    href="{{ site.url }}">
                     <i class="{{ site.icon }} fa-fw"></i>
                 </a>

@@ -8,13 +8,13 @@
 #play_disabled {
   font-size: @player-button-size * .9;
   padding: (@player-padding-size * 2) 0;
-  color: white;
+  color: @beige;
 }
 
 #jp_toggle_play {
   font-size: @player-button-size;
   padding: @player-padding-size 0;
-  color: white;
+  color: @beige;
   cursor: pointer;
 
   &.jp-state-playing {  // when playing, hide play button
@@ -46,7 +46,7 @@
   }
 
   @media (max-width: @grid-float-breakpoint) {
-    background-color: #fff;
+    background-color: @beige;
     border: 1px solid @gray-light;
     border-radius: 0 0 4px 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);

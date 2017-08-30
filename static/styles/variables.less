@@ -5,15 +5,17 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-base:              #000;
-@gray-darker:            #292929;
+@gray-darker:            @gray-dark;
 @gray-dark:              #424242;
 @gray:                   darken(@gray-light, 20%);
-@gray-light:             #C0C0C0;
+@gray-light:             #61c9a8;
 @gray-lighter:           lighten(@gray-light, 10%);
 
-@brand-primary:         #C02942;
+@beige:                 #fff3e6;
+
+@brand-primary:         #ba3b46;
 @brand-success:         #29ABE0;
-@brand-info:            #8B7CBC;
+@brand-info:            #ba3b46;
 @brand-warning:         #F47C3C;
 @brand-danger:          #93C54B;
 
@@ -23,9 +25,9 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @beige;
 //** Global text color on `<body>`.
-@text-color:            #3E3F3A;
+@text-color:            @gray-darker;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -38,8 +40,8 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
-@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -49,7 +51,7 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h1:            floor((@font-size-base * 3)); // 42px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
@@ -63,7 +65,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    400;
+@headings-font-weight:    800;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -229,13 +231,13 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    #fff;
+@dropdown-bg:                    @brand-primary;
 //** Dropdown menu `border-color`.
-@dropdown-border:                @gray-light;
+@dropdown-border:                transparent;
 //** Dropdown menu `border-color` **for IE8**.
 @dropdown-fallback-border:       @gray-light;
 //** Divider color for between dropdown items.
-@dropdown-divider-bg:            @gray-lighter;
+@dropdown-divider-bg:            @gray-light;
 
 //** Dropdown link text color.
 @dropdown-link-color:            @gray;
@@ -361,9 +363,9 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray-dark;
-@navbar-default-bg:                @gray-darker;
-@navbar-default-border:            @gray-darker;
+@navbar-default-color:             @gray-light;
+@navbar-default-bg:                @gray-light;
+@navbar-default-border:            @gray-light;
 
 // Navbar links
 @navbar-default-link-color:                @gray;
@@ -394,9 +396,9 @@
 // Inverted navbar links
 @navbar-inverse-link-color:                 #fff;
 @navbar-inverse-link-hover-color:           #fff;
-@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 4%);
+@navbar-inverse-link-hover-bg:              @navbar-inverse-bg, 4%;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 4%);
+@navbar-inverse-link-active-bg:             @navbar-inverse-bg, 4%;
 @navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
@@ -417,7 +419,7 @@
 
 //=== Shared nav styles
 @nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-lighter;
+@nav-link-hover-bg:                         @brand-primary;
 
 @nav-disabled-link-color:                   @gray-light;
 @nav-disabled-link-hover-color:             @gray-light;

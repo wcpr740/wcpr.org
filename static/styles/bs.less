@@ -17,11 +17,15 @@
 .sandstone {
   font-size: 15px;
   line-height: 1.5em;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: @beige;
+  
 }
 
 .navbar {
+    
+    
   .nav > li > a {
     .sandstone;
   }
@@ -32,26 +36,32 @@
   }
 }
 
-@nav-gradient-left: @brand-primary;
+
 @nav-gradient-right: mix(@brand-primary, @brand-info);
 .navbar-inverse {
-  background: @nav-gradient-left;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, @nav-gradient-left, @nav-gradient-right);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, @nav-gradient-left, @nav-gradient-right); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: @gray-light; /* fallback for old browsers */
+  
 }
 
 .navbar-brand {
-  padding: 30px 5px;
 
+  padding: 0px 0px;
+  
+  
   > img {
-    margin-top: -5.5%;
-  }
+    
+      
+      margin-left: 1px;
+      width: 275px;
+       
+  } 
 }
 
 @media (max-width: @grid-float-breakpoint) {
  .navbar-center-on-collapse {  // center navbar-brand when collapsed
    position: absolute;
    left: 50%;
+   top: -20%;
    transform: translateX(-50%);
   }
 
