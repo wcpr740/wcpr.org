@@ -6,15 +6,192 @@
 <section class="jumbotron" id="booking">
     <div class="container">
         <h1>Mobile Units</h1>
-            <p>
-                To request WCPR at your event, click the following button and fill out the Mobile Unit Request Form.
-            </p>
-            <p>
-                <a href="https://orgsync.com/48047/forms/207703/submission"
-                   class="btn btn-primary btn-lg" role="button">
-                    Request for Mobile Unit
-                </a>
-            </p>
+            <p>To request WCPR at your event, fill out this Mobile Unit Request Form.</p>
+            <form action="">
+                <p>You must read and agree to the following Terms and Conditions, henceforth known as the Mobile Unit Contract, before proceeding. A copy of this contract can be exported at the end for your records.</aside>
+                </br>
+                <p>The Mobile Unit Request form provides WCPR with details of events booked. You will be contacted after completing the form on the status of your event. Price estimate available upon request. All prices provided in this form are for estimation and guideline purposes only.</p>
+            <!-- Begin Accordion -->
+              <div class="panel-group" id="accordion">
+                <!-- Contract -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href=#collapse0>Contract</a>
+                    </h4>
+                  </div>
+                  <div id="collapse0" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <ol>
+                          <li>The organization booking WCPR assumes all financial responsibility for damage to equipment.</li>
+                          <li>The booking organization understands that WCPR is to be paid for the labor involved with the event. Recognized Student Organizations shall not be held responsible for the costs of equipment excepting under special circumstances defined in this contract. All other booking parties may incur additional fees at the discretion of WCPR.</li>
+                          <li>Equipment fees will be levied in the event that equipment requested is unneeded due to foreseeable causes or circumstances of miscommunication between the organization booking and WCPR and/or the group they booked. The organization booking will not be held responsible for excessive equipment that was not requested. The fees may also be levied for any additional equipment requested above as it adds to the set-up time for the event.</li>
+                          <li>WCPR crew present will consist of at least 1 staff member, and 1 technical support member (if possible).</li>
+                          <li>The overtime penalty will be levied after an event has transpired. Overtime is defined as time in excess of the agreed-on duration of an event (i.e. lasting 3 hours instead of 2), and does not count setup/breakdown. In the event that WCPR is told that an event starts at a time that is earlier or later than the time the event actually starts, WCPR reserves the right to charge overtime for those hours.
+                          <li>If WCPR is booked less than or equal to 72 hours before the event starts, then WCPR reserves the right to charge both late booking fees and to decline the booking.</li>
+                          <li>Payment methods: For RSOs/Stevens organizations, payment must be rendered by Interdepartmental Transfer Form. For outside organizations, payment must be rendered in cash or check ONLY. If a check is used, it must be made out to Stevens Institute of Technology and sent to WCPR's mailbox (Box S-1461, 1 Castle Point Ter, Hoboken NJ 07030) within 1 week after the event. If the event is off of campus grounds, then appropriate fees will be applied (e.g. transportation fees). All transportation fees must be paid in cash.</li>
+                          <li>For every on-campus event, the organization booking must supply an electrician from Physical Plant. An electrician may not be required only at WCPR’s discretion.</li>
+                          <li>Please allow two weeks prior to the event date for the WCPR Staff to respond their availability. If the event is submitted within two weeks prior to the event date, allow the WCPR Staff one week after submission to respond their availability. WCPR reserves the right to decline any event at any point.</li>
+                          <li>By endorsing this contract, the booking organization and WCPR agree to the above terms. This is a legally binding contract.</li>
+                      </ol>
+                      </br>
+                      <input type="radio" name="agree" value="yes" required>I Agree
+                    </div>
+                  </div>
+                </div>
+                <!-- Details -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href=#collapse1>Organization and Event Details</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <aside>Please fill out your contact information. This information is required to properly schedule your event. WCPR reserves the right to discard any forms received with missing or invalid details.</aside>
+                      <label>Organization Name</label>
+                      </br>
+                      <input name="org name" type="text" required/>
+                      </br>
+                      <label>Contact Person</label>
+                      </br>
+                      <input name="contact" type="text" required/>
+                      </br>
+                      <label>Event Name</label>
+                      </br>
+                      <input name="event name" type="text" required/>
+                      </br>
+                      <label>Event Description</label>
+                      <aside>Please describe the event here. If booking sound, ensure you specify the type of music you would like. If booking lights, please describe specific colors and/or moods (e.g. warm, cool).</aside>
+                      <input name="event description" type="text"/>
+                      </br>
+                      <label>Contact Phone Number</label>
+                      </br>
+                      <input name="phone number" type="text" required/>
+                      </br>
+                      <label>Contact Email</label>
+                      </br>
+                      <input name="contact email" type="email" required/>
+                      </br>
+                      <label>Event Location</label>
+                      <aside>Note: Off-campus events will require special approval and will incur transportation fees.</aside>
+                      <input name ="location" type="name" required/>
+                      </br>
+                      <label>Billing Account Number</label>
+                      <aside>This is required for all events.</aside>
+                      <input name="billing" type="text" required/>
+                      </br>
+                      <label>Event Date</label>
+                      <aside>Events are approved on a first come, first served basis. WCPR reserves the right to decline events due to time conflicts.</aside>
+                      <input name="date" type="date" required/>
+                      </br>
+                      <label>Event Start Time</label>
+                      <aside>Please indicate the time doors open.</aside>
+                      <input name="start" type="time" required/>
+                      </br>
+                      <label>Event End Time</label>
+                      <aside>Events continuing past the time indicated on this contract will be billed overtime fees.</aside>
+                      <input name="end" type="time" required/>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sound -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href=#collapse2>Sound Packages</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <aside>Please choose a sound package by clicking the button next to your desired option. These fees encompass the time and labor required for setting up and removing associated package equipment.
+                        NOTE: If your event requires both lights and sound, you must pick a sound package here and a lighting package on the next page. Select "No Sound Package" if your event does not require sound equipment.</aside>
+                      <input type="radio" name="sound packages" value="basic">Basic Sound Package - $75 + $40/hr - Includes labor for: Yamaha system (mixer and speakers) and two wireless microphones</br>
+                      <input type="radio" name="sound packages" value="advanced">Advanced Sound Package - $100 + $40/hr - Includes labor for: CV Mains and amp, Presonus Mixer, and two wireless microphones</br>
+                      <input type="radio" name="sound packages" value="live">Live Performance Package - $150 + $40/hr - Includes labor for: Advanced Sound Rack and CV Speakers, Presonus or Mackie Mixer, four channels for Floor Monitors, drum microphones, DI boxes, vocal and instrumental microphones, and a stage snake.</br>
+                      <input type="radio" name="sound packages" value="none">No Sound Package</br>
+                      <p>Sound Add Ons</p>
+                      <aside>Check the boxes next to your choices. These fees encompass the time and labor required for setting up and removing associated package equipment.</aside>
+                      <input type="radio" name="addons" value="subs">21" Subs - $50 - Only available for Advanced Sound and Live Performance</br>
+                      <input type="radio" name="addons" value="wired">Wired Mics (4) - $10</br>
+                      <input type="radio" name="addons" value="wireless">Wireless Mics (2 additional) - $20</br>
+                      <input type="radio" name="addons" value="karaoke">Karaoke Package - $25</br>
+                      <input type="radio" name="addons" value="monitors">Floor Monitors (up to 4 channels) - $50</br>
+                    </div>
+                  </div>
+                </div>
+                <!-- Lights -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Lighting Packages</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <aside>Check the boxes next to your choices. These fees encompass the time and labor required for setting up and removing associated package equipment. NOTE: If you require both lights and sound, please ensure you selected a sound package on the previous page, and select a lighting package from this page.</aside>
+
+                      <input type="radio" name="lighting packages" value="stage">Stage Lighting - $60 flat rate fee with sound package OR $40 + $40/hr without sound package - Includes labor for: Six LED pars and two spots</br>
+                      <input type="radio" name="lighting packages" value="party">Party Lighting Package - $100 flat rate fee with sound package OR $50 + $40/hr without sound pacakge - Includes labor for: Computerized Lighting Software, eight LED pars, and twelve LED strips</br>
+                      <input type="radio" name="lighting packages" value="rave">Rave Lighting Package - $125 flat rate fee with sound package OR $75 + $40/hr without sound package - Includes labor for: Computerized Lighting software, eight LED pars, two or four moving heads, twelve LED strips, lasers, suns, and strobes</br>
+                      <input type="radio" name="lighting packages" value="none">No Lighting Package</br>
+                      <p>Lighting Add Ons</p>
+                      <aside>Check the boxes next to your choices. These fees encompass the time and labor required for setting up and removing associated package equipment.</aside>
+                      <input type="radio" name="light addons" value="messengers">Up to 2 (two) LED Messengers - $30</br>
+                      <input type="radio" name="light addons" value="strips">Up to 12 (twelve) LED Strips - $50</br>
+                    </div>
+                  </div>
+                </div>
+                <!-- Special Requests -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Special Requests</a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <aside>Please include any additional special requests. You may include additional setup or equipment requests here. WCPR will make their best effort to meet any requests entered in this section. Any fees incurred by special requests will be disclosed and discussed prior to the event.</aside>
+                      <input name="requests" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Other Fees and Signature -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Other Fees and Signature</a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <aside>Late Fees:</aside>
+                      <ul>
+                        <li>7-10 days before event: $30 late fee</li>
+                        <li>4-7 days before event: $50 late fee</li>
+                        <li>1-3 days before event: $75 late fee</li>
+                      </ul>
+                      <aside>Transportation Fees:</aside>
+                      <ul>
+                        <li>$15 within Hoboken (off Stevens Campus)</li>
+                        <li>$25 out of Hoboken (up to 10 miles away)</li>
+                        <li>Additional $0.25 per mile after</li>
+                        <li>NOTE: Tolls and parking fees in excess of transportation fees must be included</li>
+                      </ul>
+                      <aside>Overtime Fee:</br>For events that continue after the designated event time, the hourly rate becomes $50 for each subsequent hour.</br>Cancellation Fee:</br>
+                      For events cancelled less than 48 hours prior to event: $40</br>These details provided for reference only. A final contract must be agreed upon prior to the event.</aside>
+                      <p>Signature</p>
+                      <aside>The Renter must check "I Agree" to submit form. This indicates the renter is aware of these fees and agrees to pay for services rendered as a result of this contract when agreed upon by both parties. "I Agree" will appear below when this form is printed indicating the renter has agreed to these conditions.</aside>
+                      <input name="final sig" type="text" required/>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- This is the end of the accordion -->
+
+
+              <input type="submit" value="Send" />
+            </form>
+
     </div>
 </section>
 <section class="container" id="faq">
