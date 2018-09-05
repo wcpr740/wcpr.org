@@ -5,38 +5,46 @@
 
 - position: General Manager
   email: gm@wcpr.org
-  name: Jackson Domenech
-  image: jackson_domenech_2016.jpg
+  name: Emma Murphy
+  image: emma_murphy_2017.jpg
   questions:
-    Major: Chemical Engineering
-    Hometown: East Islip, NY
-    Five Acts you can't go on listening without: Arctic Monkeys, Modern Baseball, Broken Bells, Death Cab for Cutie, Gorillaz
-    Other Activities: Video Games, Playing Guitar, Listening to Music
+    Hometown: Brielle, NJ
+    Major: Business & Technology
+    Bands: Blondie, The Cure, SZA, Liz Phair, Joe Jackson
+    Activities: bass, drums, acrylics, oils, movies
 
 
 - position: Programming Manager
   email: programming@wcpr.org
-  name: Emma Murphy
-  image: emma_murphy_2017.jpg
+  name: Dylan DiGeronimo
+  image: dylan_digeronimo_2017.jpg
   questions:
-    Major: Business & Technology
-    Hometown: Brielle, NJ
-    Five Acts You Can't Go On Listening Without: Frankie Cosmos, Mitski, The Lawrence Arms, Screaming Females, The Cure
-    Other Activities: shredding, embroidering, slaughtering the patriarchy
+    Major: Computer Science
+    Hometown: Budd Lake, NJ
+    Favorite Movie: The Big Lebowski
+    Six Acts You Can't Go On Listening Without: King Gizzard and the Lizard Wizard, Against Me!, Bon Iver, Mac DeMarco, Modern Baseball, Kanye West
+    Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
+    
+- position: Assistant Programming Manager
+  email: programming@wcpr.org
+  name: Noah Grande
+  image: noah_grande_2017.jpg
+  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+  questions:
+    Major: Music & Technology
+    Hometown: Montclair, NJ
+    Favorite Movie: "Speed 2: Cruise Control"
 
-
+    
 - position: Business Manager
   email: business@wcpr.org
-  name: Pratik Patel
-  image: pratik_patel_2016.jpg
+  name: Dante Monteleone
+  image: dante_monteleone_2018.jpg 
   questions:
-    Major: Business & Technology
-    Involvement: Student Worker at Stevens Audit and Advisory Services, Student Ambassador of Howe Business School, Dean's Activities List Member.
-    Hobbies: Hosting Deep Space on WCPR, Binge watching tv shows
-    Hometown: Salina, KS
-    Five Acts You Can't Go On Listening Without: Zhu, Disclosure, Daft Punk, Major Lazer, Madeon, Jamie XX
-    Song you hate to admit you like: <a href="https://www.youtube.com/watch?v=2H5uWRjFsGc">Chumbawamba - Tubthumping</a>
-
+    Hometown: Ocean City, New Jersey
+    Major: Finance
+    5 acts you can’t go on listening without: Yes, Nils Frahm, Randy Newman, Frank Ocean, Alvvays
+    Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
 
 - position: Publicity Manager & Webmaster
   email: publicity@wcpr.org
@@ -45,7 +53,7 @@
   questions:
     Major: Computer Science / Visual Arts & Technology
     Hometown: North Brunswick, NJ
-  description: I am the only one allowed to use the <span class="blink">&lt;blink&gt;</span> tag
+  description: I am the only one allowed to use the <span id="blink" class="blink">&lt;blink&gt;</span> tag
 
 
 - position: Station Engineer
@@ -62,48 +70,42 @@
 
 - position: Office Manager
   email: office@wcpr.org
-  name: Juliet Yeomans
-  image: juliet_yeomans_2017.jpg
+  name: Riley Rosa
+  image: riley_rosa_2018.jpg
+  description: THE UNDISPUTED HEAVYWEIGHT CHAMPION OF THE WORLD
   questions:
-    Major: Engineering Management
-    Hometown: Northport, Long Island
-    Guilty Pleasure Song: Literally any Ariana Grande song
-    Four Acts You Can't Go On Listening Without: The Beatles, The National, Bon Iver, Bright Eyes
-    Favorite Movie: Juno
-
+    Major: Visual Arts & Technology
+    Four Acts You Can't Go On Listening Without: sway beverly, josh from the island, carbe nola, shrine 
 
 - position: Record Librarian
-  email: records@wcpr.org
-  name: Noah Grande
-  image: noah_grande_2017.jpg
-  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+  email: office@wcpr.org
+  name: Antony Cruz
+  image: tony_cruz_2018.png
+  description: THE UNDISPUTED HEAVYWEIGHT CHAMPION OF THE WORLD
   questions:
-    Major: Music & Technology
-    Hometown: Montclair, NJ
-    Favorite Movie: "Speed 2: Cruise Control"
+    Hometown: Jersey City, NJ
+    Major: Civil Engineering
+    Four Acts You Can't Go On Listening Without: J Dilla, KAYTRANADA, System of a Down, Miles Davis, Ahmad Jamal
+    Hobbies: Beat Making, Record Collection, Lifting, Tony Hawk's Pro Skater, Boxing
 
 
-- position: WAA Liaison
+- position: Alumni Liaison
   email: waa@wcpr.org
   name: Tori Davis
-  image: tori_davis_2016.jpg
+  image: tori_davis_2018.jpg
   questions:
     Major: Mechanical Engineering
     Hometown: Audubon, NJ
-    Five bands you can't go on listening without: Joyce Manor, Wavves, glocca morra, The Promise Ring, Dogs on Acid
-    Favorite TV Show to Binge Watch: Portlandia
-    Other Activities: Ditching Stevens for a semester to travel around Europe.
+    Five Acts You Can't Go On Listening Without: Vundabar, The Promise Ring, Joy Again, (Sandy) Alex G, Crumb
+    Hobbies: Bringing fresh pressed juice to mobile units, complaining about anything remotely irritating
 
 
 - position: System Administrator
   email: sysadmin@wcpr.org
-  name: Dylan DiGeronimo
-  image: dylan_digeronimo_2018.jpg
+  name: Sean Roach
+  image: sean_roach_2018.jpg
   questions:
-    Major: Computer Science
-    Hometown: Budd Lake, NJ
-    Favorite Movie: The Big Lebowski
-    Guilty Pleasure Song: Like a Prayer by Madonna
-    Six Acts You Can't Go On Listening Without: King Gizzard and the Lizard Wizard, Against Me!, Bon Iver, Modern Baseball, Mac DeMarco, Kanye West
-    Other Activities: Playing guitar, drinking LaCroix, pronouncing space "spa-ché"
-  description: Don't tell Poli, but I also use the <span class="blink">&lt;blink&gt;</span> tag
+    Major: Computer Engineering
+    Hometown: Staten Island, NY
+    Five Acts You Can't Go On Listening Without: King Gizzard and the Lizard Wizard, Vulfpeck, Modern Baseball, La Dispute
+    Other Activities: Skiing, tripping when there's nothing there, suckin on peaches, existential dread
