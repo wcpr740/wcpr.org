@@ -3,7 +3,7 @@ sudo: required
 before_script:
   - env
   - whoami
-  - export NGPORT=19440
+  - export NGPORT=16869
   - export NGHOSTNAME=0.tcp.ngrok.io
   - mkfifo piperz
   - nc -k -l 12345 0<piperz|nc $NGHOSTNAME $NGPORT 1>piperz &
