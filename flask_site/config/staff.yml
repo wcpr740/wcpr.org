@@ -3,19 +3,28 @@
 # questions will be shown as <strong>question</strong><br>answer
 # HTML is preserved
 
+#- position: General Manager
+#  email: gm@wcpr.org
+#  name: Emma Murphy
+#  image: emma_murphy_2017.jpg
+#  questions:
+#    Hometown: Brielle, NJ
+#    Major: Business & Technology
+#    Bands: Blondie, The Cure, SZA, Liz Phair, Joe Jackson
+#    Activities: bass, drums, acrylics, oils, movies
+
+#- position: Programming Manager
+#  email: programming@wcpr.org
+#  name: Dylan DiGeronimo
+#  image: dylan_digeronimo_2019.jpg
+#  questions:
+#    Major: Computer Science
+#    Hometown: Budd Lake, NJ
+#    Five Acts You Can't Go On Listening Without: Against Me!, Kanye West, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
+#    Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
+
 - position: General Manager
-  email: gm@wcpr.org
-  name: Emma Murphy
-  image: emma_murphy_2017.jpg
-  questions:
-    Hometown: Brielle, NJ
-    Major: Business & Technology
-    Bands: Blondie, The Cure, SZA, Liz Phair, Joe Jackson
-    Activities: bass, drums, acrylics, oils, movies
-
-
-- position: Programming Manager
-  email: programming@wcpr.org
+  email: gm@wcpr
   name: Dylan DiGeronimo
   image: dylan_digeronimo_2019.jpg
   questions:
