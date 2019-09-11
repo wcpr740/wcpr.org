@@ -63,14 +63,14 @@
 #    Hometown: North Brunswick, NJ
 #  description: I am the only one allowed to use the <span id="blink" class="blink">&lt;blink&gt;</span> tag
 
-- position: Webmaster
-  name: Kalani Pigao
-  image: kalani_pigao_2019.jpg
-  description: Yeet
-  questions:
-    Major: Electrical Engineering / Music Technology (minor)
-    Hometown: Plantation, FL
-    Favorite Strokes Ripoff: No Buses
+#- position: Webmaster
+# name: Kalani Pigao
+#  image: kalani_pigao_2019.jpg
+#  description: Yeet
+#  questions:
+#    Major: Electrical Engineering / Music Technology (minor)
+#    Hometown: Plantation, FL
+#    Favorite Strokes Ripoff: No Buses
 
 - position: Station Engineer
   email: engineer@wcpr.org
