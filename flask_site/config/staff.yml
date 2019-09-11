@@ -43,7 +43,6 @@
     Hometown: Montclair, NJ
     Favorite Movie: "Speed 2: Cruise Control"
 
-    
 - position: Business Manager
   email: business@wcpr.org
   name: Dante Monteleone
@@ -55,11 +54,13 @@
     Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
 
 - position: Webmaster
+  email: webmaster@stevens.edu
   name: Kalani Pigao
-#  image: kalani_pigao_2019.jpg
+  image: kalani_pigao_2019.jpg
   questions:
     Major: Electrical Engineering / Music & Technology Minor
     Hometown: Plantation, FL
+    Favorite Strokes Ripoff: No Buses
   description: Yeet
 
 - position: Station Engineer
@@ -72,7 +73,6 @@
     Six Acts You Can't Go On Listening Without: Caribou, Daft Punk, Flume, War On Drugs, Mumford and Sons, Elvis Presley
     Favourite Movie: Fight Club
     Unknown Unguilty Pleasure: ABBA's Greatest Hits
-
 
 - position: Office Manager
   email: office@wcpr.org
