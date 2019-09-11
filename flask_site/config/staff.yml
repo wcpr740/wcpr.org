@@ -62,6 +62,15 @@
     Hometown: Plantation, FL
     Favorite Strokes Ripoff: No Buses
   description: Yeet
+  
+- position: Historian
+  email: historian@wcpr.org
+  name: Laina Emmons
+  image: laina_emmons_2019.jpg
+  questions:
+    Major: Political Science
+    Hometown: Lambertville, NJ
+    Method Of Liquid Consumption: Mason Jar (exclusively)
 
 - position: Station Engineer
   email: engineer@wcpr.org
@@ -107,10 +116,9 @@
 
 - position: System Administrator
   email: sysadmin@wcpr.org
-  name: Sean Roach
-  image: sean_roach_2018.jpg
+  name: Kirsten Meidlinger
+  image: kirsten_roach_2018.jpg
   questions:
-    Major: Computer Engineering
-    Hometown: Staten Island, NY
-    Five Acts You Can't Go On Listening Without: King Gizzard and the Lizard Wizard, Vulfpeck, Modern Baseball, La Dispute
-    Other Activities: Skiing, tripping when there's nothing there, suckin on peaches, existential dread
+    Major: Computer Science
+    Hometown: South Brunswick, NJ
+    Blurb: I’ve marched drum corps for 2 seasons and I have 3 pet dogs and 6 pet cats at home. 
