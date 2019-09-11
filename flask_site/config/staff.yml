@@ -54,23 +54,13 @@
     5 acts you can’t go on listening without: Yes, Nils Frahm, Randy Newman, Frank Ocean, Alvvays
     Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
 
-#- position: Publicity Manager & Webmaster
-#  email: publicity@wcpr.org
-#  name: Kevin Poli
-#  image: kevin_poli_2018.jpg
-#  questions:
-#    Major: Computer Science / Visual Arts & Technology
-#    Hometown: North Brunswick, NJ
-#  description: I am the only one allowed to use the <span id="blink" class="blink">&lt;blink&gt;</span> tag
-
-#- position: Webmaster
-# name: Kalani Pigao
-#  image: kalani_pigao_2019.jpg
-#  description: Yeet
-#  questions:
-#    Major: Electrical Engineering / Music Technology (minor)
-#    Hometown: Plantation, FL
-#    Favorite Strokes Ripoff: No Buses
+- position: Webmaster
+  name: Kalani Pigao
+  image: kalani_pigao_2019.jpg
+  questions:
+    Major: Electrical Engineering / Music & Technology Minor
+    Hometown: Plantation, FL
+  description: Yeet
 
 - position: Station Engineer
   email: engineer@wcpr.org
