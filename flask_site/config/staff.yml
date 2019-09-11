@@ -114,11 +114,11 @@
     Hobbies: Bringing fresh pressed juice to mobile units, complaining about anything remotely irritating
 
 
-#- position: System Administrator
-#  email: sysadmin@wcpr.org
-#  name: Kirsten Meidlinger
-#  image: kirsten_meidlinger_2018.jpg
-#  questions:
-#    Major: Computer Science
-#    Hometown: South Brunswick, NJ
-#    Blurb: I’ve marched drum corps for 2 seasons and I have 3 pet dogs and 6 pet cats at home. 
+- position: System Administrator
+  email: sysadmin@wcpr.org
+  name: Kirsten Meidlinger
+  image: kirsten_meidlinger_2019.jpg
+  questions:
+    Major: Computer Science
+    Hometown: South Brunswick, NJ
+    Blurb: I’ve marched drum corps for 2 seasons and I have 3 pet dogs and 6 pet cats at home. 
