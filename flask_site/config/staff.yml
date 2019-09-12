@@ -3,16 +3,6 @@
 # questions will be shown as <strong>question</strong><br>answer
 # HTML is preserved
 
-#- position: General Manager
-#  email: gm@wcpr.org
-#  name: Emma Murphy
-#  image: emma_murphy_2017.jpg
-#  questions:
-#    Hometown: Brielle, NJ
-#    Major: Business & Technology
-#    Bands: Blondie, The Cure, SZA, Liz Phair, Joe Jackson
-#    Activities: bass, drums, acrylics, oils, movies
-
 #- position: Programming Manager
 #  email: programming@wcpr.org
 #  name: Dylan DiGeronimo
@@ -112,7 +102,6 @@
     Four Acts You Can't Go On Listening Without: J Dilla, KAYTRANADA, System of a Down, Miles Davis, Ahmad Jamal
     Hobbies: Beat Making, Record Collection, Lifting, Tony Hawk's Pro Skater, Boxing
 
-
 - position: Alumni Liaison
   email: waa@wcpr.org
   name: Tori Davis
@@ -122,7 +111,6 @@
     Hometown: Audubon, NJ
     Five Acts You Can't Go On Listening Without: Vundabar, The Promise Ring, Joy Again, (Sandy) Alex G, Crumb
     Hobbies: Bringing fresh pressed juice to mobile units, complaining about anything remotely irritating
-
 
 - position: System Administrator
   email: sysadmin@wcpr.org
