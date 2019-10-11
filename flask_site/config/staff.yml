@@ -22,7 +22,7 @@
 #    Hometown: Surrey, UK
 #    Loves: Caribou, R.E.M.
 #    Has ever picked the vegetarian option on an airplane?: No
-    
+      
 #- position: Assistant Programming Manager
 #  email: programming@wcpr.org
 #  name: Noah Grande
@@ -70,16 +70,15 @@
     Hometown: Lambertville, NJ
     Method Of Liquid Consumption: Mason Jar (exclusively)
 
-- position: Station Engineer # make shit up
+- position: Station Engineer #fake news
   email: engineer@wcpr.org
-  name: Tom Bloxam
-  image: tom_bloxam_2018.jpg
+  name: Nosferatu
+  image: nosferatu_2019.jpg
   questions:
-    Major: Music & Technology
-    Hometown: Lehigh, PA & London, England
-    Six Acts You Can't Go On Listening Without: Caribou, Daft Punk, Flume, War On Drugs, Mumford and Sons, Elvis Presley
-    Favourite Movie: Fight Club
-    Unknown Unguilty Pleasure: ABBA's Greatest Hits
+    Major: Undecided
+    Hometown: Wisborg, Germany
+    Allergies: Garlic, Wooden Stakes, The Sun
+    Favorite Pastime: Flickering light switches
 
 - position: Office Manager #GOOD
   email: office@wcpr.org
