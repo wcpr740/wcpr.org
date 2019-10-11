@@ -3,17 +3,7 @@
 # questions will be shown as <strong>question</strong><br>answer
 # HTML is preserved
 
-#- position: Programming Manager
-#  email: programming@wcpr.org
-#  name: Dylan DiGeronimo
-#  image: dylan_digeronimo_2019.jpg
-#  questions:
-#    Major: Computer Science
-#    Hometown: Budd Lake, NJ
-#    Five Acts You Can't Go On Listening Without: Against Me!, Kanye West, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
-#    Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
-
-- position: General Manager
+- position: General Manager #GOOD
   email: gm@wcpr.org
   name: Dylan DiGeronimo
   image: dylan_digeronimo_2019.jpg
@@ -23,15 +13,25 @@
     Five Acts You Can't Go On Listening Without: Against Me!, Kanye West, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
     Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
     
-- position: Assistant Programming Manager
+- position: Consultant To The Programming Manager #GOOD
   email: programming@wcpr.org
-  name: Noah Grande
-  image: noah_grande_2017.jpg
-  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+  name: Tom Bloxam
+  image: tom_bloxam_2019.jpg
   questions:
     Major: Music & Technology
-    Hometown: Montclair, NJ
-    Favorite Movie: "Speed 2: Cruise Control"
+    Hometown: Surrey, UK
+    Loves: Caribou, R.E.M.
+    Has ever picked the vegetarian option on an airplane?: No
+    
+#- position: Assistant Programming Manager
+#  email: programming@wcpr.org
+#  name: Noah Grande
+#  image: noah_grande_2017.jpg
+#  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+#  questions:
+#    Major: Music & Technology
+#    Hometown: Montclair, NJ
+#    Favorite Movie: "Speed 2: Cruise Control"
 
 - position: Business Manager
   email: business@wcpr.org
@@ -43,7 +43,15 @@
     5 acts you can’t go on listening without: Yes, Nils Frahm, Randy Newman, Frank Ocean, Alvvays
     Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
 
-- position: Webmaster
+- position: Publicity Manager
+   email: info@wcpr.org
+   name: Riley Rosa
+   image: riley_rosa_2019.jpg
+   questions:
+    Major: Visual Arts N Tech
+    Hometown: "..."
+
+- position: Webmaster #GOOD
   email: webmaster@stevens.edu
   name: Kalani Pigao
   image: kalani_pigao_2019.jpg
@@ -53,7 +61,7 @@
     Favorite Strokes Ripoff: No Buses
   description: Yeet
   
-- position: Historian
+- position: Historian #GOOD
   email: historian@wcpr.org
   name: Laina Emmons
   image: laina_emmons_2019.jpg
@@ -62,7 +70,7 @@
     Hometown: Lambertville, NJ
     Method Of Liquid Consumption: Mason Jar (exclusively)
 
-- position: Station Engineer
+- position: Station Engineer # make shit up
   email: engineer@wcpr.org
   name: Tom Bloxam
   image: tom_bloxam_2018.jpg
@@ -73,7 +81,7 @@
     Favourite Movie: Fight Club
     Unknown Unguilty Pleasure: ABBA's Greatest Hits
 
-- position: Office Manager
+- position: Office Manager #GOOD
   email: office@wcpr.org
   name: August Leyda
   image: august_leyda_2019.jpg
@@ -92,27 +100,26 @@
 #    Major: Visual Arts & Technology
 #    Four Acts You Can't Go On Listening Without: sway beverly, josh from the island, carbe nola, shrine 
 
-- position: Record Librarian
-  email: office@wcpr.org
-  name: Antony Cruz
-  image: tony_cruz_2018.png
-  questions:
-    Hometown: Jersey City, NJ
-    Major: Civil Engineering
-    Four Acts You Can't Go On Listening Without: J Dilla, KAYTRANADA, System of a Down, Miles Davis, Ahmad Jamal
-    Hobbies: Beat Making, Record Collection, Lifting, Tony Hawk's Pro Skater, Boxing
+#- position: Record Librarian
+#  email: office@wcpr.org
+#  name: Antony Cruz
+#  image: tony_cruz_2018.png
+#  questions:
+#    Hometown: Jersey City, NJ
+#    Major: Civil Engineering
+#    Four Acts You Can't Go On Listening Without: J Dilla, KAYTRANADA, System of a Down, Miles Davis, Ahmad Jamal
+#    Hobbies: Beat Making, Record Collection, Lifting, Tony Hawk's Pro Skater, Boxing
 
-- position: Alumni Liaison
+- position: Alumni Liaison #GOOD
   email: waa@wcpr.org
-  name: Tori Davis
-  image: tori_davis_2018.jpg
+  name: Kit Touch-Phong
+  image: kit_touch_pong_2019.jpg
   questions:
-    Major: Mechanical Engineering
-    Hometown: Audubon, NJ
-    Five Acts You Can't Go On Listening Without: Vundabar, The Promise Ring, Joy Again, (Sandy) Alex G, Crumb
-    Hobbies: Bringing fresh pressed juice to mobile units, complaining about anything remotely irritating
-
-- position: System Administrator
+    Major: Visual Arts & Technology
+    Hometown: Bangkok, TH
+    Top 3 Brad Pitts: Troy, Once Upon a Time in Hollywood, Inglorious Basterds
+    
+- position: System Administrator #GOOD
   email: sysadmin@wcpr.org
   name: Kirsten Meidlinger
   image: kirsten_meidlinger_2019.jpg
