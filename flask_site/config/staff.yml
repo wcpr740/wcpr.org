@@ -12,8 +12,18 @@
     Hometown: Budd Lake, NJ
     Five Acts You Can't Go On Listening Without: Against Me!, Kanye West, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
     Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
+
+- position: Consultant To The Programming Manager
+  email: programming@wcpr.org
+  name: Noah Tom Bloxam
+  image: tom_bloxam_2019.jpg
+  questions:
+    Major: Music & Technology
+    Hometown: Surrey, UK
+    Loves: Caribou, R.E.M.
+    Has ever picked the vegetarian option on an airplane?: No
  
-#- position: Consultant To The Programming Manager #GOOD
+#- position: Consultant To The Programming Manager #GOOD???????
 #  email: programming@wcpr.org
 #  name: Tom Bloxam
 #  image: tom_bloxam_2019.jpg
@@ -33,7 +43,7 @@
 #    Hometown: Montclair, NJ
 #    Favorite Movie: "Speed 2: Cruise Control"
 
-- position: Business Manager
+- position: Business Manager #fix when they give stuff
   email: business@wcpr.org
   name: Dante Monteleone
   image: dante_monteleone_2018.jpg 
@@ -43,7 +53,7 @@
     5 acts you can’t go on listening without: Yes, Nils Frahm, Randy Newman, Frank Ocean, Alvvays
     Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
 
-- position: Publicity Manager
+- position: Publicity Manager #GOOD?
   email: info@wcpr.org
   name: Riley Rosa
   image: riley_rosa_2019.jpg
@@ -70,7 +80,7 @@
     Hometown: Lambertville, NJ
     Method Of Liquid Consumption: Mason Jar (exclusively)
 
-- position: Station Engineer #fake news
+- position: Station Engineer #fix when they give the bio
   email: engineer@wcpr.org
   name: Nosferatu
   image: nosferatu_2019.jpg
@@ -89,15 +99,6 @@
     Hometown: Hudson, WI
     5 Acts You Can't Go On Listening Without: Carly Rae Jepsen, Clarence Clarity, Danny L Harle, Kendrick Lamar, They Might Be Giants
     God-Given Greatest Genre: Bubblegum Bass
-
-#- position: Office Manager
-#  email: office@wcpr.org
-#  name: Riley Rosa
-#  image: riley_rosa_2018.jpg
-#  description: THE UNDISPUTED HEAVYWEIGHT CHAMPION OF THE WORLD
-#  questions:
-#    Major: Visual Arts & Technology
-#    Four Acts You Can't Go On Listening Without: sway beverly, josh from the island, carbe nola, shrine 
 
 #- position: Record Librarian
 #  email: office@wcpr.org
