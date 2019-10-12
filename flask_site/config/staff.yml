@@ -21,7 +21,7 @@
     Major: Music & Technology
     Hometown: Surrey, UK
     Loves: Caribou, R.E.M.
-    Has ever picked the vegetarian option on an airplane?: No
+    Has ever picked the vegetarian option on an airplane?: "No"
  
 #- position: Consultant To The Programming Manager #GOOD???????
 #  email: programming@wcpr.org
@@ -43,15 +43,15 @@
 #    Hometown: Montclair, NJ
 #    Favorite Movie: "Speed 2: Cruise Control"
 
-- position: Business Manager #fix when they give stuff
-  email: business@wcpr.org
-  name: Dante Monteleone
-  image: dante_monteleone_2018.jpg 
+- position: House Doctor #Business Manager fix when they give stuff
+  email: hd@wcpr.org #business@wcpr.org
+  name: Doctor Victor Von Frankenstein
+  image: victor_frankenstein_2019.jpg 
   questions:
-    Hometown: Ocean City, New Jersey
-    Major: Finance
-    5 acts you can’t go on listening without: Yes, Nils Frahm, Randy Newman, Frank Ocean, Alvvays
-    Other Activities: Counting money, ignoring Slack notifications, and drinking the far superior seltzer beverage, Schweppes
+    Hometown: Naples, Italy
+    Major: Biomedical Engineering
+    Favorite Song: Monster Mash
+    Other Activities: Collecting body parts
 
 - position: Publicity Manager #GOOD?
   email: info@wcpr.org
@@ -62,7 +62,7 @@
     Hometown: "..."
 
 - position: Webmaster #GOOD
-  email: webmaster@stevens.edu
+  email: webmaster@wcpr.org
   name: Kalani Pigao
   image: kalani_pigao_2019.jpg
   questions:
@@ -80,8 +80,8 @@
     Hometown: Lambertville, NJ
     Method Of Liquid Consumption: Mason Jar (exclusively)
 
-- position: Station Engineer #fix when they give the bio
-  email: engineer@wcpr.org
+- position: Head of Security #station engineer@wcprfix when they give the bio
+  email: hos@wcpr.org #engineer@wcpr.org
   name: Nosferatu
   image: nosferatu_2019.jpg
   questions:
