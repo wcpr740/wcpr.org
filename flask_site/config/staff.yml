@@ -5,13 +5,22 @@
 
 - position: General Manager #GOOD
   email: gm@wcpr.org
-  name: Dylan DiGeronimo
-  image: dylan_digeronimo_2019.jpg
+  name: Laina Emmons
+  image: laina_emmons_2019.jpg
   questions:
-    Major: Computer Science
-    Hometown: Budd Lake, NJ
-    Five Acts You Can't Go On Listening Without: Against Me!, Bon Iver, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
-    Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
+    Major: Political Science
+    Hometown: Lambertville, NJ
+    Method Of Liquid Consumption: Mason Jar (exclusively)
+
+#- position: General Manager #GOOD
+#  email: gm@wcpr.org
+#  name: Dylan DiGeronimo
+#  image: dylan_digeronimo_2019.jpg
+#  questions:
+#    Major: Computer Science
+#    Hometown: Budd Lake, NJ
+#    Five Acts You Can't Go On Listening Without: Against Me!, Bon Iver, King Gizzard and the Lizard Wizard, Haruomi Hosono, Mac DeMarco
+#    Other Activities: Drinking LaCroix, uploading his conisciousness onto the cloud in order to manifest himself as an all-powerful artificial intelligence, playing guitar 
 
 - position: Programming Manager
   email: programming@wcpr.org
@@ -32,16 +41,6 @@
     Hometown: Surrey, UK
     Loves: Caribou, R.E.M.
     Has ever picked the vegetarian option on an airplane?: "No"
-
-- position: House Doctor #Business Manager fix when they give stuff
-  email: hd@wcpr.org #business@wcpr.org
-  name: Doctor Victor Von Frankenstein
-  image: victor_frankenstein_2019.jpg 
-  questions:
-    Hometown: Naples, Italy
-    Major: Biomedical Engineering
-    Favorite Song: Monster Mash
-    Other Activities: Collecting body parts
 
 - position: Publicity Manager #GOOD?
   email: info@wcpr.org
@@ -70,7 +69,7 @@
     Hometown: Lambertville, NJ
     Method Of Liquid Consumption: Mason Jar (exclusively)
 
-- position: Station Engineer
+- position: Station Engineergit
   email: engineer@wcpr.org
   name: Jack Kostelnik
   image: jack_kostelnik_2019.jpg
