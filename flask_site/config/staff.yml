@@ -24,23 +24,23 @@
 
 - position: Programming Manager
   email: programming@wcpr.org
-  name: Noah Grande
-  image: noah_grande_2017.jpg
-  description: Noah enjoys long walks on the beach, making beats, sarcasm, and overthrowing the establishment.
+  name: August Leyda
+  image: august_leyda_2019.jpg
   questions:
-    Major: Music & Technology
-    Hometown: Montclair, NJ
-    Favorite Movie: "Speed 2: Cruise Control"
+    Major: Music& Technology
+    Hometown: Hudson, WI
+    5 Acts You Can't Go On Listening Without: Carly Rae Jepsen, Clarence Clarity, Danny L Harle, Kendrick Lamar, They Might Be Giants
+    God-Given Greatest Genre: Bubblegum Bass
 
-- position: Consultant To The Programming Manager
-  email: programming@wcpr.org
-  name: Tom Bloxam
-  image: tom_bloxam_2019.jpg
-  questions:
-    Major: Music & Technology
-    Hometown: Surrey, UK
-    Loves: Caribou, R.E.M.
-    Has ever picked the vegetarian option on an airplane?: "No"
+#- position: Consultant To The Programming Manager
+#  email: programming@wcpr.org
+#  name: Tom Bloxam
+#  image: tom_bloxam_2019.jpg
+#  questions:
+#    Major: Music & Technology
+#    Hometown: Surrey, UK
+#    Loves: Caribou, R.E.M.
+#    Has ever picked the vegetarian option on an airplane?: "No"
 
 - position: Publicity Manager #GOOD?
   email: info@wcpr.org
