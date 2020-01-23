@@ -62,12 +62,12 @@
   
 - position: Historian #GOOD
   email: historian@wcpr.org
-  name: Maderia Gallagher
-  image: maderia_gallagher_2020.jpg
+  name: Laina Emmons
+  image: laina_emmons_2019.jpg
   questions:
-    Major: Music Tech
-    Hometown: Marlboro, NJ
-  description: I'm named after an island
+    Major: Political Science
+    Hometown: Lambertville, NJ
+    Method Of Liquid Consumption: Mason Jar (exclusively)
 
 - position: Station Engineer
   email: engineer@wcpr.org
@@ -76,7 +76,7 @@
   questions:
     Major: Music and Technology
     Hometown: North Yarmouth, Maine
-    Blub: I love exploring music from outside the United States and learning about other musical cultures. I run a show on WCPR called “Chicken Are People Too” where I play outsider and international music.
+    Blurb: I love exploring music from outside the United States and learning about other musical cultures. I run a show on WCPR called “Chicken Are People Too” where I play outsider and international music.
 
 - position: Office Manager #GOOD
   email: office@wcpr.org
