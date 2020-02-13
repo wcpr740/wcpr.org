@@ -14,7 +14,7 @@ packaging==16.8
 pilkit==2.0
 Pillow==4.1.0
 pyparsing==2.2.0
-PyYAML==3.12
+PyYAML==5.1
 six==1.10.0
 webassets==0.12.1
 Werkzeug==0.11.15
