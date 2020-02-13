@@ -2,7 +2,7 @@ appdirs==1.4.3
 argh==0.26.2
 click==6.7
 csscompressor==0.9.4
-Flask==0.12
+Flask==1.0
 Flask-Assets==0.12
 Flask-Resize==2.0.3
 Frozen-Flask==0.13
