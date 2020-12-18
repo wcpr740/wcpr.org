@@ -7,7 +7,7 @@ Flask-Assets==0.12
 Flask-Resize==2.0.3
 Frozen-Flask==0.13
 itsdangerous==0.24
-Jinja2==2.9.5
+Jinja2==2.10.1
 MarkupSafe==0.23
 olefile==0.44
 packaging==16.8
