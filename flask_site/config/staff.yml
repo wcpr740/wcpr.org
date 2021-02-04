@@ -56,13 +56,14 @@
 #    Has ever picked the vegetarian option on an airplane?: "No"
 
 - position: Publicity Manager #GOOD?
-  email: info@wcpr.org
-  name: Nicole Naber
-  image: nicole_naber_2020.jpg
+  email: publicity@wcpr.org
+  name: Chloe Brenna
+  image: chloe_brenna_2021.jpg
   questions:
-    Major: Mechanical Engineering
-    Hometown: Savanna, GA
-    My Sources Of Happines: Music, Sitcoms, and Rick And Morty
+    Major: Engineering Management
+    Hometown: Point Pleasant, NJ
+    Fun Fact: My dog went viral on Twitter!
+  description: Greetings loved ones B-) 
 
 - position: Webmaster #GOOD
   email: webmaster@wcpr.org
@@ -93,14 +94,16 @@
     Hometown: North Yarmouth, Maine
     Blurb: I love exploring music from outside the United States and learning about other musical cultures. I run a show on WCPR called “Chicken Are People Too” where I play outsider and international music.
 
-- position: Office Manager #GOOD
+- position: Office Manager and System Administrator #GOOD
   email: office@wcpr.org
-  name: Trent Reichenbach
-  image: trent_reichenbach_2020.jpg
+  name: Jason Li
+  image: jason_li_2021.jpg
   questions:
-    Major: Engineer - Undecided
-    Hometown: Doylestown, PA
-    Fuel Source: Safeway Wild Cherry Clear Splash
+    Major: Computer Engineering
+    Hometown: Denville, NJ
+    Underrated Acts: Ben Folds, Classifyde, Fountains of Wayne, Sara Bareilles, They Might Be Giants
+    Streets Ahead: Community
+  description: Professional Worry Rock
 
 #- position: Record Librarian
 #  email: office@wcpr.org
