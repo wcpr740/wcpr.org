@@ -27,23 +27,31 @@
 
 - position: Programming Manager
   email: programming@wcpr.org
-  name: August Leyda
-  image: august_leyda_2019.jpg
+  name: Nicole Naber
+  image: nicole_naber_2020.jpg
   questions:
-    Major: Music& Technology
-    Hometown: Hudson, WI
-    5 Acts You Can't Go On Listening Without: Carly Rae Jepsen, Clarence Clarity, Danny L Harle, Kendrick Lamar, They Might Be Giants
-    God-Given Greatest Genre: Bubblegum Bass
+    Major: Mechanical Engineering
+    Hometown: Savanna, GA
+    My Sources of Happiness: Music, Sitcoms, and Rick and Morty
 
-- position: Treasurer and System Administrator #GOOD
-  email: treasurer@wcpr.org
-  name: Kirsten Meidlinger
-  image: kirsten_meidlinger_2019.jpg
+- position: Business Manager #GOOD
+  email: business@wcpr.org
+  name: Trent Reichenbach
+  image: trent_reichenbach_2020.jpg
   questions:
-    Major: Computer Science
-    Hometown: South Brunswick, NJ
-    Blurb: I’ve marched drum corps for 2 seasons and I have 3 pet dogs and 6 pet cats at home. 
-  description: I spent all these hours building shelves and this is what I get
+    Major: Engineer - Undecided
+    Hometown: Doylestown, PA
+    Fuel Source: Safeway Wild Cherry Clear Splash
+
+#- position: Treasurer and System Administrator #GOOD
+#  email: treasurer@wcpr.org
+#  name: Kirsten Meidlinger
+#  image: kirsten_meidlinger_2019.jpg
+#  questions:
+#    Major: Computer Science
+#    Hometown: South Brunswick, NJ
+#    Blurb: I’ve marched drum corps for 2 seasons and I have 3 pet dogs and 6 pet cats at home. 
+#  description: I spent all these hours building shelves and this is what I get
 
 #- position: Consultant To The Programming Manager
 #  email: programming@wcpr.org
