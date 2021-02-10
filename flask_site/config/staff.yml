@@ -75,32 +75,31 @@
 
 - position: Webmaster #GOOD
   email: webmaster@wcpr.org
-  name: Kalani Pigao
-  image: kalani_pigao_2019.jpg
+  name: Kat Ryan
+  image: kat_ryan_2021.jpg
   questions:
-    Major: Electrical Engineering / Music & Technology Minor
-    Hometown: Plantation, FL
-    Favorite Artist That I Discovered While Watching A Cartoon Show: Mike Krol
-    Best Band Named After Household Appliance: Washer
-  description: Yeet
+    Major: Music & Technology
+    Hometown: Merrick, NY
+    Least favorite nickname given: Katthew
+  description: I updated this page you're welcome!
   
 - position: Historian #GOOD
   email: historian@wcpr.org
-  name: Madeira Gallagher
-  image: madeira_gallagher_2020.jpg
+  name: Emily McCormick
+  image: emily_mccormick_2021.jpg
   questions:
-    Major: Music Tech
-    Hometown: Marlboro, NJ
-  description: I'm named after and island!
+    Major: Biomedical Engineering
+    Hometown: Langhorne, PA
+    Fun fact: I'm terrified of birds!
 
 - position: Station Engineer
   email: engineer@wcpr.org
-  name: Jack Kostelnik
-  image: jack_kostelnik_2019.jpg
+  name: Kira Mahoney
+  image: kira_mahoney_2021.jpg
   questions:
-    Major: Music and Technology
-    Hometown: North Yarmouth, Maine
-    Blurb: I love exploring music from outside the United States and learning about other musical cultures. I run a show on WCPR called “Chicken Are People Too” where I play outsider and international music.
+    Major: Music & Technology
+    Hometown: Cherry Hill, NJ
+    Favorite Least Physical Physical Activities: Scuba diving, skiing, napping
 
 - position: Office Manager and System Administrator #GOOD
   email: office@wcpr.org
