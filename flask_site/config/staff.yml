@@ -83,23 +83,23 @@
 #    Least favorite nickname given: Katthew
 #  description: I updated this page you're welcome!
   
-#- position: Historian #GOOD
-#  email: historian@wcpr.org
-#  name: Emily McCormick
-#  image: emily_mccormick_2021.jpg
-#  questions:
-#    Major: Biomedical Engineering
-#    Hometown: Langhorne, PA
-#    Fun fact: I'm terrified of birds!
-
-- position: Station Engineer
-  email: engineer@wcpr.org
-  name: Kira Mahoney
-  image: kira_mahoney_2021.jpg
+- position: Historian
+  email: historian@wcpr.org
+  name: Emily McCormick
+  image: emily_mccormick_2021.jpg
   questions:
-    Major: Music & Technology
-    Hometown: Cherry Hill, NJ
-    Favorite Least Physical Physical Activities: Scuba diving, skiing, napping
+    Major: Biomedical Engineering
+    Hometown: Langhorne, PA
+    Fun fact: I'm terrified of birds!
+
+#- position: Station Engineer ###issue here
+#  email: engineer@wcpr.org
+#  name: Kira Mahoney
+#  image: kira_mahoney_2021.jpg
+#  questions:
+#    Major: Music & Technology
+#    Hometown: Cherry Hill, NJ
+#    Favorite Least Physical Physical Activities: Scuba diving, skiing, napping
 
 - position: Office Manager and System Administrator #GOOD
   email: office@wcpr.org
