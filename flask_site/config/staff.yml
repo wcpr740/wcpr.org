@@ -73,15 +73,15 @@
     Fun Fact: My dog went viral on Twitter!
   description: Greetings loved ones B-) 
 
-#- position: Webmaster #GOOD
-#  email: webmaster@wcpr.org
-#  name: Kat Ryan
-#  image: kat_ryan_2021.jpg
-#  questions:
-#    Major: Music & Technology
-#    Hometown: Merrick, NY
-#    Least favorite nickname given: Katthew
-#  description: I updated this page you're welcome!
+- position: Webmaster
+  email: webmaster@wcpr.org
+  name: Kat Ryan
+  image: kat_ryan_2021.jpg
+  questions:
+    Major: Music & Technology
+    Hometown: Merrick, NY
+    Least favorite nickname given: Katthew
+  description: I updated this page you're welcome!
   
 - position: Historian
   email: historian@wcpr.org
