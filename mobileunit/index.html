@@ -1,0 +1,347 @@
+ 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Search Engine -->
+    <meta name="description" content="WCPR - Castle Point Radio is Stevens Institute of Technology&#39;s official radio station.">
+    <meta name="image" content="https://wcpr.org/static/images/logos/logo2017.png">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="WCPR - Castle Point Radio">
+    <meta itemprop="description" content="WCPR - Castle Point Radio is Stevens Institute of Technology&#39;s official radio station.">
+    <meta itemprop="image" content="https://wcpr.org/static/images/logos/logo2017.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WCPR - Castle Point Radio">
+    <meta name="twitter:description" content="WCPR - Castle Point Radio is Stevens Institute of Technology&#39;s official radio station.">
+    <meta name="twitter:site" content="@wcpr">
+    <meta name="twitter:image:src" content="https://wcpr.org/static/images/logos/logo2017.png">
+    <meta name="twitter:widgets:link-color" id="twitter_color" >
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="WCPR - Castle Point Radio">
+    <meta name="og:description" content="WCPR - Castle Point Radio is Stevens Institute of Technology&#39;s official radio station.">
+    <meta name="og:image" content="https://wcpr.org/static/images/logos/fb_card.png">
+    <meta name="og:url" content="https://wcpr.org">
+    <meta name="og:site_name" content="WCPR - Castle Point Radio">
+    <meta name="og:locale" content="en_US">
+    <meta name="fb:admins" content="29608240127">
+    <meta name="og:type" content="website">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/icons/manifest.json">
+    <link rel="mask-icon" href="/static/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/images/icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="WCPR">
+    <meta name="application-name" content="WCPR">
+    <meta name="msapplication-config" content="/static/images/icons/browserconfig.xml">
+    <meta name="theme-color" content="#c02942">
+
+    <title>Mobile Unit | WCPR - Castle Point Radio</title>
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
+
+    <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    
+        <link href="/static/out/styles_main.190a6f58.css" rel="stylesheet" type="text/css">
+    
+
+    <script>
+        GLOBAL_SITE_CONFIG = {
+            calendar: {
+                api_key: 'AIzaSyB3uiiC1cR_5W1rF5paNQpR_quDIVnhuro',
+                autodj_id: 'wcpr.org_c2mvtft9shfdmenddasmqcdmg8@group.calendar.google.com',
+                shows_id: 'wcpr.org_1psqcd1ugmcg568arhf47c9lqo@group.calendar.google.com'
+            },
+            NOW_PLAYING_URL: 'https://740.wcpr.org:8080/now_playing'
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="streaming_player"></div>
+
+<nav class="navbar navbar-inverse navbar-static-top" id="navbar">
+    <div class="navbar-header navbar-center-on-collapse">
+        <a class="navbar-brand" href="/">
+            <img class="img-responsive" src="/static/images/logos/wcprwebsafe2.png">
+            <span class="brand-name hidden">WCPR</span>
+        </a>
+    </div>
+
+    <div class="navbar-right">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_collapse" aria-expanded="false" aria-controls="nav_collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="navbar-right navbar-left-on-collapse">
+        <ul class="nav navbar-nav">
+            <li id="play_disabled" class="hidden">
+                <i class="fa fa-spinner fa-pulse"></i>
+                <span class="sr-only">Loading</span>
+            </li>
+            <li id="jp_toggle_play">
+                <i class="fa fa-play-circle-o play"></i><span class="sr-only play">Play</span>
+                <i class="fa fa-stop-circle-o stop"></i><span class="sr-only stop">Stop</span>
+            </li>
+            <li class="dropdown">
+                <a id="quality_select_toggle" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <ul id="quality_select_dropdown" class="dropdown-menu dropdown-menu-right">
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="nav_collapse" class="navbar-collapse collapse navbar-left">
+        <ul class="nav navbar-nav navbar-left">
+            <li><a href="/schedule/">Schedule</a></li>
+            <li><a href="/mobileunit/">Mobile Units</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="https://www.wcpralumni.com/">Alumni <i class="fa fa-external-link fa-fw"></i></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
+                    More <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="/contact/#staff">Staff</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/policies/">Policies</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="now_playing_container">
+    Now Playing:  <strong id="now_playing_simple">Loading...</strong>
+</div>
+<div id="play_progress_container" class="progress">
+    <div class="progress-bar progress-bar-accent" role="progressbar" id="play_progress"></div>
+</div>
+
+<div id="page_container">
+    <!--START_ANCHOR-->
+<section class="jumbotron" id="booking">
+    <div class="container">
+        <h1>Mobile Units</h1>
+            <p>
+               Due to the ongoing move, please contact us to discuss the specifics of your event before trying to book a mobile unit. 
+            </p>
+           
+    </div>
+</section>
+<section class="container" id="faq">
+    <h1 class="text-center">Mobile Unit FAQs</h1>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            
+                <div class="mu-faq">
+                    <h3>What is a Mobile Unit?</h3>
+                    <p class="answer">Mobile Units are student-run live sound and lights services provided
+by WCPR. If you see our table at a campus event, we're playing music,
+organizing lights, or running sound for the organization running the
+event. <br>
+Mobile Units are another part of what WCPR does, alongside
+other efforts like providing original programming as a radio station,
+recording in our studios, and putting on concerts on campus.
+</p>
+                </div>
+            
+                <div class="mu-faq">
+                    <h3>What services does a Mobile Unit provide?</h3>
+                    <p class="answer">We offer a ton of different sound and light options for whatever
+your organization needs for an event. Find all of them in the
+<a href="#docs">Mobile Units Packages & Prices</a> document.<br>
+If you have any questions about our packages, feel free to email us at
+<a href="mailto:mobileunit@wcpr.org">mobileunit@wcpr.org</a>
+</p>
+                </div>
+            
+                <div class="mu-faq">
+                    <h3>How does Mobile Unit pricing work?</h3>
+                    <p class="answer">Our pricing varies per package and per your needs. Most of our packages
+have a <strong>flat fee</strong> for equipment and setup, and
+any of our staffed packages have an <strong>hourly rate</strong> for
+operating the equipment.<br>
+Equipment set-up and breakdown are not included in the hourly fees.
+<br><br>
+Anything booked within ten days will incur a <strong>late fee</strong>.
+<br>
+Events held off-campus include a <strong>transportation fee</strong>
+for moving equipment.<br>
+Events that run overtime will be charged an <strong>overtime fee</strong>
+<br>
+Any event cancelled less than 48 hours prior to the event will incur
+a <strong>cancellation fee</strong>.
+<br><br>
+<em>An item of note:</em> WCPR staff are student volunteers and are
+not paid for their time. The money you pay goes directly to repairing
+and updating our equipment as it wears and ages.
+</p>
+                </div>
+            
+                <div class="mu-faq">
+                    <h3>How do I book a Mobile Unit?</h3>
+                    <p class="answer">Please fill out the <a href="#booking">Mobile Unit Request form</a>.
+<strong>Until you've submitted that form, we cannot consider your
+event nor can we assess our staff availability.</strong> Keep in mind
+that the closer to your event you submit this, the less likely it is
+for our staff to be available (we are all student volunteers!).
+<br><br>
+Please review our <a href="#docs">Mobile Unit Contract</a> document to find
+detailed information concerning staffing, overtime, and other policies
+in accordance with Mobile Units.
+</p>
+                </div>
+            
+                <div class="mu-faq">
+                    <h3>I submitted the form - what happens now?</h3>
+                    <p class="answer">Great! Our staff will now be coordinating volunteer availability for
+your event. Please allow us until two weeks prior to your event date
+before our response. Once this has happened, you will get an email
+with one of two outcomes:
+<ul>
+  <li>
+  In the event we have staff available for your event, it will be
+  <strong>Approved</strong>. If you have special requests (e.g. a
+  certain kind of music you'd like to be played, specific lighting
+  arrangements, etc.), do not hesitate to contact us at
+  <a href="mailto:mobileunit@wcpr.org">mobileunit@wcpr.org</a>
+  <br>
+  <strong>Note</strong>: If you have any live artist, band, DJ, etc.
+  at your event, <em>coordination is necessary</em> between us, you,
+  and your act(s).
+  </li>
+  <li>
+  In the event we do not have staff available for your event, it will
+  be <strong>Denied</strong>. Please contact the Office of Student Life
+  (10th floor of Howe) for additional options if sound and/or lighting
+  services are integral to your event.
+  </li>
+</ul>
+We may also reach out before our decision if we need more information
+on the event.
+</p>
+                </div>
+            
+                <div class="mu-faq">
+                    <h3>How will the day of the event go?</h3>
+                    <p class="answer">We will be arriving early to set up our equipment - how early we show
+up depends on the package your organization booked, but in general
+we will arrive at least an hour before the event start time.
+<br><br>
+Following the event, the organization will be billed for WCPR's
+services through coordination between our
+<a href="/contact/#staff_business">Business Manager</a> and the Office
+of Student Life. Contact
+<a href="mailto:business@wcpr.org">business@wcpr.org</a> with any
+billing questions.
+<br><br>
+If you have any additional questions, feel free to reach out to
+<a href="mailto:mobileunit@wcpr.org">mobileunit@wcpr.org</a>
+at any time!</p>
+                </div>
+            
+        </div>
+    </div>
+</section>
+<section id="docs">
+    <div class="container">
+        <h1 class="text-center">Mobile Unit Documents</h1>
+        <div class="col-md-10 col-md-offset-1">
+            <p>Find more information about Mobile Units in the following documents:</p>
+            <ul>
+                <li><a href="/static/docs/WCPRMobileUnit_Contract.pdf" target="_blank">
+                    Mobile Unit Contract
+                </a></li>
+                <li><a href="/static/docs/WCPRMobileUnit_PricesInfo.pdf" target="_blank">
+                    Mobile Units Packages & Prices
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--END_ANCHOR-->
+</div>
+
+<footer>
+    <div class="container">
+        <div class="left">
+            &copy; WCPR - Castle Point Radio<br>
+            <a href="https://www.stevens.edu/">Stevens Institute of Technology</a>, Hoboken, NJ
+        </div>
+        <div class="right">
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://www.facebook.com/WCPR740/">
+                    <i class="fa fa-facebook fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://www.instagram.com/wcpr740/">
+                    <i class="fa fa-instagram fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://twitter.com/wcpr">
+                    <i class="fa fa-twitter fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://open.spotify.com/user/wcpr">
+                    <i class="fa fa-spotify fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://wcpr740.slack.com/">
+                    <i class="fa fa-slack fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="https://soundcloud.com/wcpr">
+                    <i class="fa fa-soundcloud fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="tel:201-216-3483">
+                    <i class="fa fa-phone fa-fw"></i>
+                </a>
+            
+                <a class="btn btn-circle btn-primary"
+                   href="mailto:info@wcpr.org">
+                    <i class="fa fa-envelope fa-fw"></i>
+                </a>
+            
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+    <script type="text/javascript" src="/static/out/js_main.78bf2425.js"></script>
+
+<script async src="//assets.juicer.io/embed-no-jquery.js" type="text/javascript"></script>
+
+</html>

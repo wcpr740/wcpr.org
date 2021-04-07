@@ -1,0 +1,66 @@
+
+@import "bs.less";
+
+@import (once) "../bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "../fonts/font-awesome";
+
+// import as less so it's inlined
+@import (less) "../bower_components/fullcalendar/dist/fullcalendar.css";
+
+@import "player.less";
+@import "now_playing.less";
+@import "index.less";
+@import "social.less";
+@import "staff.less";
+@import "policies.less";
+@import "contact.less";
+@import "schedule.less";
+@import "mobile_unit.less";
+@import "footer.less";
+@import "error.less";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-bottom: 25px;
+
+  &.inverse {
+    background-color: @gray-lighter;
+  }
+  h1:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  background-color: @gray-lighter;
+  padding: 20px 0 20px 0;
+  btn {
+      color:@brand-primary;
+  }
+}
+
+// Nifty scrollbar
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: fade(@btn-default-bg, 30%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: fade(@btn-default-bg, 95%);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: fade(@btn-default-bg, 70%);
+}

@@ -1,0 +1,42 @@
+
+#now_playing_container {
+  min-height: 10px;
+  position: relative;
+  background-color: @brand-info;
+  color: @beige;
+  text-align: center;
+}
+
+#play_progress_container {
+  height: 5px;
+  border-radius: 0;
+}
+
+#now_playing_full {
+  .now-on-air {
+    a {
+      width: 35%;
+      float: left;
+    }
+    h4 {
+      width: 60%;
+      float: right;
+      margin: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  table {
+    tr {
+      td {
+        vertical-align: top;
+        padding-bottom: 5px;
+        &:first-child {
+          width: 70px;
+        }
+      }
+    }
+  }
+}

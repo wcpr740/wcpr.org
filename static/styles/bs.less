@@ -1,0 +1,266 @@
+@import (once) "../bower_components/bootstrap/less/bootstrap.less";
+
+// Based on Bootstwatch Sandstone 3.3.7 - http://bootswatch.com/sandstone/
+// -----------------------------------------------------
+
+@import "variables.less";
+
+// Override Bootstrap make-row because wtf why does it do it how it does.
+.make-row(@gutter: @grid-gutter-width) {
+  margin-left: 0;
+  margin-right: 0;
+  .clearfix();
+}
+
+// Navbar =====================================================================
+
+.sandstone {
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: @beige;
+  
+}
+
+.navbar {
+    
+    
+  .nav > li > a {
+    .sandstone();
+  }
+
+  &-form input,
+  &-form .form-control {
+    border: none;
+  }
+}
+
+
+@nav-gradient-right: mix(@brand-primary, @brand-info);
+.navbar-inverse {
+  background: @gray-light; /* fallback for old browsers */
+  
+}
+
+.navbar-brand {
+
+  padding: 0px 0px;
+  
+  
+  > img {
+    
+      
+      margin-left: 1px;
+      width: 275px;
+       
+  } 
+}
+
+@media (max-width: @grid-float-breakpoint) {
+ .navbar-center-on-collapse {  // center navbar-brand when collapsed
+   position: absolute;
+   left: 50%;
+   top: -20%;
+   transform: translateX(-50%);
+  }
+
+  .navbar-left-on-collapse {
+    position: absolute;
+    left: 0;
+    .navbar-nav {
+      margin: 0 5px;
+      & > li {
+        float: left;
+        a {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    margin-top: @navbar-height;
+    text-align: right;
+
+    .dropdown ul {
+      text-align: right;
+    }
+  }
+}
+
+// Buttons ====================================================================
+
+.btn {
+  border: none;
+  .sandstone();
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  &-lg {
+    line-height: 26px;
+  }
+
+  &-default {
+    &:hover {
+      background-color: @navbar-default-link-active-bg;
+    }
+  }
+}
+
+// Typography =================================================================
+
+// Tables =====================================================================
+
+.table-row-variant(disabled, #ddd);
+
+// Forms ======================================================================
+
+input,
+.form-control {
+  .box-shadow(none);
+
+  &:focus {
+    border-color: @input-border;
+    .box-shadow(none);
+  }
+}
+
+// Navs =======================================================================
+
+.nav {
+  .sandstone();
+
+  .open > a,
+  .open > a:hover,
+  .open > a:focus {
+    border-color: @gray-light;
+  }
+}
+
+.nav-tabs {
+
+  & > li > a {
+    background-color: @gray-lighter;
+    border-color: @nav-tabs-border-color;
+    color: @gray;
+  }
+
+  > li.disabled > a:hover {
+    background-color: @gray-lighter;
+  }
+}
+
+.nav-pills {
+  a {
+    color: @gray;
+  }
+
+  li > a {
+    border: 1px solid transparent;
+  }
+
+  li.active > a,
+  li > a:hover {
+    border-color: @gray-light;
+  }
+
+  li.disabled > a {
+    border-color: transparent;
+  }
+}
+
+.breadcrumb {
+  .sandstone();
+
+  border: 1px solid @gray-light;
+
+  a {
+    color: @gray;
+  }
+}
+
+.pagination {
+  .sandstone();
+}
+
+.pager {
+  .sandstone();
+
+  li > a {
+    color: @gray;
+  }
+}
+
+.dropdown-menu {
+  & > li > a {
+    .sandstone();
+  }
+}
+
+// Indicators =================================================================
+
+.alert {
+
+  a,
+  .alert-link {
+    color: #fff;
+  }
+}
+
+.tooltip {
+  .sandstone();
+}
+
+// Progress bars ==============================================================
+
+.progress {
+  border-radius: 10px;
+  background-color: @gray-light;
+  .box-shadow(none);
+
+  &-bar {
+    .box-shadow(none);
+  }
+}
+
+.progress-bar-accent {
+  .progress-bar-variant(@brand-info);
+}
+
+// Containers =================================================================
+
+.list-group {
+  &-item {
+    padding: 16px 24px;
+  }
+}
+
+.well {
+  .box-shadow(none);
+}
+
+.panel {
+  .box-shadow(none);
+
+  .panel-heading,
+  .panel-title {
+    .sandstone();
+    color: #fff;
+  }
+
+  .panel-footer {
+    .sandstone();
+  }
+
+  &-default {
+    .panel-heading,
+    .panel-title,
+    .panel-footer {
+      color: @gray;
+    }
+  }
+}

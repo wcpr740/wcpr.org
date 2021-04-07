@@ -1,0 +1,92 @@
+.show-format-gen(@name, @background-color, @text-color: black,
+                 @border-bottom: darken(@background-color, 10%) 1px solid) {
+  .show-format-@{name} {
+    &.fc-event {
+      background-color: @background-color;
+      border: none;
+      border-bottom: @border-bottom;
+      color: @text-color !important;
+    }
+
+    &.label {
+      background-color: @background-color;
+      color: @text-color;
+      &:hover {
+        background-color: lighten(@background-color, 25%);
+        cursor: pointer;
+      }
+      &.selected {
+        background-color: lighten(@background-color, 30%);
+      }
+    }
+
+    .hide-formats & {
+      display: none;
+    }
+    .hide-formats.except-@{name} & {
+      display: block;
+    }
+  }
+}
+
+// Generate colors for each variety of show. Keep this in sync with show_formats.yml
+// HTML color codes will also work perfectly.
+//     params   (IDENTIFIER,    BACKGROUND,   TEXT,   BOTTOM BORDER);
+.show-format-gen(easy,          lighten(#987284, 20%),       black);
+.show-format-gen(rock,          #9DBF9E,      black);
+.show-format-gen(classic-rock,  #D0D6B5,     black);
+.show-format-gen(talk,          #F9B5AC,    black);
+.show-format-gen(metal,         #EE7674,       white);
+.show-format-gen(electronic,    @gray-dark,        white);
+.show-format-gen(variety,       #DEBA6F,         black);
+.show-format-gen(hip-hop,       #7b7554,       white);
+.show-format-gen(indie,         @gray-light,         @beige);
+.show-format-gen(pop,           lightgray,    black);
+
+
+.fc-autodj-toggle-button, .fc-shows-toggle-button {
+  &:focus {
+    outline: none;
+  }
+  
+}
+
+.fc-events-full-width() {
+  .fc-event {
+    left: 0 !important;
+    right: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.fc {
+  &.hide-autodj {
+    .fc-events-full-width();
+    .schedule-autodj {
+      display: none;
+    }
+    .fc-shows-toggle-button {
+        background-color: @brand-primary;
+      .fc-state-down();
+    }
+  }
+  &.hide-shows {
+    .fc-events-full-width();
+    .schedule-shows {
+      display: none;
+    }
+    .fc-autodj-toggle-button {
+        background-color: @gray-light;
+      .fc-state-down();
+    }
+  }
+}
+
+@media (max-width: @screen-md-min) {
+  .show-format-list {
+    margin-bottom: 10px;
+    br {
+      display: none;
+    }
+  }
+}

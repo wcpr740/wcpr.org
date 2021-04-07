@@ -1,0 +1,21 @@
+
+.social-gen(@name, @background-color, @text-color: white) {
+  .social-@{name} {
+    background-color: @background-color;
+    color: @text-color;
+    a&:hover {
+      background-color: darken(@background-color, 15%);
+    }
+  }
+}
+
+.social-gen(gray, @gray-dark);
+
+.social-gen(facebook, #3b5998);
+.social-gen(instagram, #e1306c);
+.social-gen(twitter, #1da1f2);
+.social-gen(spotify, #2ebd59);
+.social-gen(slack, #3eb991);
+.social-gen(soundcloud, #ff3300);
+.social-gen(requests, @brand-info);
+.social-gen(email, @brand-primary);
