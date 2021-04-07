@@ -3,7 +3,7 @@ default: &defaultConfig
     name: 'WCPR'
     name_long: 'WCPR - Castle Point Radio'
     description: "WCPR - Castle Point Radio is Stevens Institute of Technology's official radio station."
-    now_playing_url: 'http://127.0.0.1:5001/now_playing'  # see https://github.com/wcpr740/740.wcpr.org
+    now_playing_url: 'http://155.246.35.11:8080/now_playing'  # see https://github.com/wcpr740/740.wcpr.org
     logo: 'https://wcpr.org/static/images/logos/logo2017.png'
 
     # Flask config
