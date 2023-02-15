@@ -17,4 +17,4 @@ pyparsing==2.2.0
 PyYAML==5.4
 six==1.10.0
 webassets==0.12.1
-Werkzeug==0.15.5
+Werkzeug==2.2.3
